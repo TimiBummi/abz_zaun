@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://abz-zaun.de</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://abz-zaun.de/produkte</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://abz-zaun.de/referenzen</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://abz-zaun.de/ueber-uns</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://abz-zaun.de/kontakt</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://abz-zaun.de/faq</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://abz-zaun.de/montage</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://abz-zaun.de/impressum</loc><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://abz-zaun.de/datenschutz</loc><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://abz-zaun.de/agb</loc><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://abz-zaun.de/produkte/doppelstabmattenzaun</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://abz-zaun.de/produkte/schiebetore</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://abz-zaun.de/produkte/drehfluegeltore</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://abz-zaun.de/produkte/sichtschutz</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://abz-zaun.de/produkte/gabionen</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://abz-zaun.de/produkte/maschendrahtzaun</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://abz-zaun.de/produkte/zierzaun</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://abz-zaun.de/produkte/torantriebe</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+</urlset>
