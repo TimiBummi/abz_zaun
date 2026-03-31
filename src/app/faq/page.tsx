@@ -35,11 +35,6 @@ const faqCategories: FaqCategory[] = [
           'Unser Einzugsgebiet umfasst die gesamte Niederrhein-Region in einem Radius von etwa 50 Kilometern rund um unseren Standort in Willich. Dazu gehören unter anderem Krefeld, Mönchengladbach, Düsseldorf, Duisburg und Neuss. Für größere Projekte sind wir nach Absprache auch überregional im Einsatz.',
       },
       {
-        question: 'Bieten Sie kostenlose Beratung an?',
-        answer:
-          'Ja, wir bieten Ihnen eine kostenlose und unverbindliche Beratung direkt bei Ihnen vor Ort an. Dabei besichtigen wir Ihr Grundstück, besprechen Ihre Wünsche und zeigen Ihnen die verschiedenen Möglichkeiten auf. Vereinbaren Sie einfach einen Termin telefonisch oder über unser Kontaktformular.',
-      },
-      {
         question: 'Wie lange dauert die Lieferung?',
         answer:
           'Die Lieferzeit beträgt in der Regel zwei bis vier Wochen, abhängig vom gewählten Produkt und der aktuellen Auftragslage. Sonderanfertigungen oder spezielle Farbbeschichtungen können etwas länger dauern. Wir informieren Sie bei der Auftragsbestätigung über den voraussichtlichen Liefertermin.',
