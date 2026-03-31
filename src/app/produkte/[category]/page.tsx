@@ -102,11 +102,6 @@ const categories: CategoryData[] = [
           'Für private Garteneinfriedungen sind 1,00 bis 1,60 m die gängigsten Höhen. Wünschen Sie mehr Sichtschutz oder Sicherheit, empfehlen wir 1,80 m. Für gewerbliche Anwendungen und Firmengelände sind Höhen ab 2,00 m ideal — unser Sortiment reicht bis 2,53 m. Unsere Fachberater bei ABZ-Zaunsysteme in Willich helfen Ihnen gerne bei der Wahl der passenden Höhe.',
       },
       {
-        question: 'Was kostet ein Doppelstabmattenzaun?',
-        answer:
-          'Der Preis hängt von Höhe, Drahtstärke (6/5/6 oder 8/6/8 mm), Farbe und Zubehör ab. Feuerverzinkte Standardmatten sind günstiger als pulverbeschichtete Ausführungen in Anthrazit oder Moosgrün. Fordern Sie ein unverbindliches Angebot bei uns an — wir erstellen Ihnen eine individuelle Kalkulation für Ihr Projekt.',
-      },
-      {
         question: 'Was bedeuten die Drahtstärken 6/5/6 und 8/6/8 mm?',
         answer:
           'Die Zahlen bezeichnen die Durchmesser der Stahldrähte in Millimetern: Bei 6/5/6 mm sind die waagerechten Doppelstäbe 6 mm und die senkrechten Stäbe 5 mm stark. Die verstärkte Variante 8/6/8 mm bietet mit 8 mm waagerechten und 6 mm senkrechten Stäben deutlich mehr Stabilität — ideal für sicherheitskritische Bereiche, Gewerbe oder öffentliche Einrichtungen.',
@@ -130,11 +125,6 @@ const categories: CategoryData[] = [
         question: 'Wie pflegeleicht ist ein Doppelstabmattenzaun?',
         answer:
           'Sehr pflegeleicht. Dank Feuerverzinkung und optionaler Pulverbeschichtung sind die Zaunelemente extrem witterungsbeständig und rostfrei. Gelegentliches Abspritzen mit Wasser genügt, um Schmutz und Ablagerungen zu entfernen. Eine aufwendige Wartung oder ein Neuanstrich ist über viele Jahre nicht nötig.',
-      },
-      {
-        question: 'Bietet ABZ-Zaunsysteme auch professionelle Zaunmontage an?',
-        answer:
-          'Ja, ABZ-Zaunsysteme GmbH bietet einen vollständigen Montageservice für Privat- und Firmenkunden. Von der Vermessung über das Setzen der Fundamente bis zur fertigen Zaunanlage übernehmen wir alles aus einer Hand. Vereinbaren Sie einen Beratungstermin unter +49 21 56 774 50 50 oder besuchen Sie uns in Willich-Neersen.',
       },
     ],
   },
@@ -199,11 +189,6 @@ const categories: CategoryData[] = [
         question: 'Welche Durchfahrtsbreite ist bei einem Schiebetor möglich?',
         answer:
           'Schiebetore lassen sich in Breiten von ca. 2,00 m bis etwa 10,00 m realisieren. Für private Einfahrten sind 3,50 bis 5,00 m üblich, für gewerbliche Zufahrten empfehlen wir 6,00 m und mehr. ABZ-Zaunsysteme fertigt jedes Schiebetor individuell nach Ihren Maßen.',
-      },
-      {
-        question: 'Was beeinflusst den Preis eines Schiebetors?',
-        answer:
-          'Die wichtigsten Preisfaktoren sind die Breite und Höhe des Tors, die Bauart (freitragend oder schienengeführt), die gewählte Füllung und Farbgebung sowie die Ausstattung mit einem Torantrieb. Ein automatisches Schiebetor mit Ditec-Antrieb kostet mehr als eine manuell bedienbare Variante. Fordern Sie bei uns ein unverbindliches Angebot an — wir kalkulieren individuell nach Ihren Anforderungen.',
       },
       {
         question: 'Ist ein Schiebetor sicher gegen Einbruch?',
@@ -274,11 +259,6 @@ const categories: CategoryData[] = [
           'Ein Drehflügeltor benötigt im Schwenkbereich ausreichend freie Fläche — je nach Flügelbreite bis zu 3,00 m pro Seite bei einem Doppeldrehtor. Das Tor kann nach innen oder außen öffnen. Wichtig ist, dass der Boden im Schwenkbereich eben und frei von Hindernissen ist. Sollte der Platz knapp sein, kann ein Schiebetor die bessere Alternative sein — wir beraten Sie gerne vor Ort in Willich-Neersen.',
       },
       {
-        question: 'Was kostet ein Drehflügeltor?',
-        answer:
-          'Der Preis eines Drehflügeltors hängt von mehreren Faktoren ab: Breite, Höhe, Material, Farbgebung und ob ein elektrischer Antrieb gewünscht ist. Ein Einzeldrehtor ist dabei günstiger als ein breites Doppeldrehtor mit Ditec-Automatik. Fordern Sie bei ABZ-Zaunsysteme ein unverbindliches Angebot an — wir kalkulieren individuell nach Ihren Maßen und Wünschen.',
-      },
-      {
         question: 'Wie pflege ich ein Drehflügeltor richtig?',
         answer:
           'Drehflügeltore aus feuerverzinktem und pulverbeschichtetem Stahl sind sehr pflegeleicht. Gelegentliches Abspritzen mit Wasser entfernt Schmutz und Ablagerungen. Die Scharniere und beweglichen Teile sollten ein- bis zweimal jährlich geschmiert werden. Bei Toren mit elektrischem Antrieb empfehlen wir eine jährliche Wartung der Technik — unser Serviceteam übernimmt das gerne.',
@@ -287,11 +267,6 @@ const categories: CategoryData[] = [
         question: 'Kann ich ein Drehflügeltor an meinen bestehenden Zaun anpassen?',
         answer:
           'Ja, ABZ-Zaunsysteme fertigt Drehflügeltore passgenau zu Ihrem vorhandenen Zaun. Ob Doppelstabmattenzaun, Frontgitterzaun oder Zierzaun — das Tor wird in Höhe, Füllung und Farbe auf Ihre bestehende Einfriedung abgestimmt. So entsteht ein einheitliches Gesamtbild. Sprechen Sie uns einfach an oder senden Sie uns Fotos Ihrer aktuellen Anlage.',
-      },
-      {
-        question: 'Bietet ABZ-Zaunsysteme auch die Montage von Drehflügeltoren an?',
-        answer:
-          'Ja, ABZ-Zaunsysteme GmbH bietet einen vollständigen Montageservice für alle Torarten. Von der Vermessung und Fundamentsetzung bis zur Torinstallation und Antriebsprogrammierung übernehmen wir alles aus einer Hand. Unser Montageteam ist in Willich-Neersen und der gesamten Niederrhein-Region für Sie im Einsatz. Vereinbaren Sie einen Termin unter +49 21 56 774 50 50.',
       },
     ],
   },
@@ -379,11 +354,6 @@ const categories: CategoryData[] = [
         answer:
           'Alpha, Sigma und die Gamma-Streifen sind vollständig blickdicht — von außen ist kein Einblick möglich. Delta bietet eine Besonderheit: Durch die transparente Struktur lässt dieser Sichtschutz Tageslicht hindurch, ist aber dennoch blickdicht. So profitieren Sie von Privatsphäre, ohne auf eine helle, freundliche Atmosphäre in Ihrem Garten verzichten zu müssen.',
       },
-      {
-        question: 'Wo kann ich mich zum Thema Sichtschutz persönlich beraten lassen?',
-        answer:
-          'Besuchen Sie uns gerne bei ABZ-Zaunsysteme GmbH in Willich-Neersen oder kontaktieren Sie uns telefonisch unter +49 (0)2156 774 50 50 bzw. per E-Mail an info@abz-zaun.de. Unsere Experten beraten Sie vor Ort zur Auswahl der passenden Sichtschutzlösung, zeigen Ihnen Muster und unterstützen bei der Planung — von der Farbwahl bis zur Montage. Wir sind Montag bis Freitag von 9 bis 17 Uhr für Sie da.',
-      },
     ],
   },
   {
@@ -463,11 +433,6 @@ const categories: CategoryData[] = [
         answer:
           'Niedrige Gabionenzäune bis etwa 1,00 m Höhe lassen sich mit handwerklichem Geschick und dem richtigen Zubehör in Eigenleistung aufbauen. Für höhere Konstruktionen, Hanglagen oder freistehende Gabionenmauern empfehlen wir die Montage durch einen Fachbetrieb, da hier statische Anforderungen beachtet werden müssen. Unser Montageteam bei ABZ-Zaunsysteme übernimmt Projekte jeder Größe in Willich und der gesamten Niederrhein-Region.',
       },
-      {
-        question: 'Was kosten Gabionen und wo kann man sie kaufen?',
-        answer:
-          'Der Preis für Gabionen hängt von Größe, Drahtstärke, Ausführung und gewünschtem Füllmaterial ab. Ein Gabionenzaun als Sichtschutz ist in der Regel günstiger als eine gemauerte Wand und dabei langlebiger als Holzalternativen. Bei ABZ-Zaunsysteme GmbH in Willich-Neersen erhalten Sie eine persönliche Beratung mit individuellem Angebot — rufen Sie uns an unter +49 21 56 774 50 50 oder nutzen Sie unser Kontaktformular.',
-      },
     ],
   },
   {
@@ -541,11 +506,6 @@ const categories: CategoryData[] = [
           'Der Maschendrahtzaun eignet sich hervorragend als Gartenzaun, Grundstückseinfriedung, Tiergehege (Hühner, Kaninchen, Hunde), Spielplatzbegrenzung, Kleingarteneinzäunung und als Einfriedung von Gewerbeflächen. Überall dort, wo eine klare Abgrenzung wichtiger ist als Sichtschutz oder maximale Einbruchsicherheit, ist er die wirtschaftlichste Wahl. Für höhere Sicherheitsanforderungen empfiehlt ABZ-Zaunsysteme ergänzend Doppelstabmattenzäune.',
       },
       {
-        question: 'Was kostet ein Maschendrahtzaun im Vergleich zum Doppelstabmattenzaun?',
-        answer:
-          'Ein Maschendrahtzaun ist deutlich günstiger als ein Doppelstabmattenzaun — in der Regel liegen die Materialkosten pro laufendem Meter bei einem Bruchteil. Der genaue Preis hängt von Höhe, Drahtstärke und Beschichtung ab. Gerade bei langen Zaunstrecken summiert sich die Ersparnis erheblich. Fordern Sie ein unverbindliches Angebot bei ABZ-Zaunsysteme GmbH an — wir kalkulieren individuell für Ihr Projekt.',
-      },
-      {
         question: 'Welche Höhe sollte ein Maschendrahtzaun haben?',
         answer:
           'Für Gartenzäune sind 100 bis 150 cm die gängigsten Höhen. Zur Absicherung von Tiergehegen empfehlen sich je nach Tierart 125 bis 175 cm. Grundsätzlich gilt: Je höher der Zaun, desto stabiler müssen Pfosten und Verankerung dimensioniert sein. Unser Team bei ABZ-Zaunsysteme GmbH in Willich berät Sie zur optimalen Höhe für Ihren konkreten Einsatzzweck.',
@@ -554,11 +514,6 @@ const categories: CategoryData[] = [
         question: 'Wie pflege ich meinen Maschendrahtzaun?',
         answer:
           'Maschendrahtzäune sind äußerst pflegeleicht. Gelegentliches Abspritzen mit dem Gartenschlauch entfernt Schmutz, Moos und Ablagerungen. Kontrollieren Sie einmal jährlich die Spannung des Geflechts und ziehen Sie die Spanndrähte bei Bedarf nach. Bei beschädigten Stellen — etwa durch Astbruch — kann das Geflecht lokal repariert werden, ohne den gesamten Zaun austauschen zu müssen.',
-      },
-      {
-        question: 'Bietet ABZ-Zaunsysteme professionelle Montage für Maschendrahtzäune an?',
-        answer:
-          'Ja, ABZ-Zaunsysteme GmbH bietet einen vollständigen Montageservice für Privat- und Gewerbekunden in Willich, am Niederrhein und in der gesamten Region. Von der Vermessung über das Setzen der Pfosten bis zum fertigen Zaun übernehmen wir alles aus einer Hand. Vereinbaren Sie einen Beratungstermin unter +49 21 56 774 50 50 oder besuchen Sie uns in Willich-Neersen.',
       },
     ],
   },
@@ -629,11 +584,6 @@ const categories: CategoryData[] = [
         question: 'Kann ich zum Zierzaun ein passendes Tor bekommen?',
         answer:
           'Ja, ABZ-Zaunsysteme bietet Drehtore und Doppeldrehtore im gleichen Design wie den Zierzaun an. So entsteht ein einheitliches, harmonisches Gesamtbild an Ihrem Grundstück. Auch Schiebetore mit Torantrieb lassen sich integrieren. Sprechen Sie uns an — wir planen Zaun und Tor aus einer Hand.',
-      },
-      {
-        question: 'Bietet ABZ-Zaunsysteme Beratung und Montage für Zierzäune an?',
-        answer:
-          'Ja, ABZ-Zaunsysteme GmbH bietet umfassende Beratung, Planung und professionelle Montage für Zierzäune an. Von der Vermessung über das Setzen der Fundamente bis zur fertigen Zaunanlage übernehmen wir alles aus einer Hand. Vereinbaren Sie einen Termin unter +49 21 56 774 50 50 oder besuchen Sie uns in Willich-Neersen.',
       },
     ],
   },
@@ -738,19 +688,9 @@ const categories: CategoryData[] = [
           'Ja, die Selbstmontage ist mit etwas handwerklichem Geschick gut machbar. Die Zaunpfosten werden einbetoniert oder mit ABZ-Fix aufgedübelt, anschließend werden die Gitterelemente mit den mitgelieferten Befestigungen am Pfosten montiert. Eine ausführliche Montageanleitung erhalten Sie bei Bestellung. Alternativ übernimmt unser erfahrenes Montageteam die fachgerechte Installation in der Region Willich und am gesamten Niederrhein.',
       },
       {
-        question: 'Was kostet ein Frontgitterzaun?',
-        answer:
-          'Der Preis richtet sich nach Höhe, Farbe, Länge und gewähltem Zubehör. Feuerverzinkte Standardausführungen sind günstiger als pulverbeschichtete Varianten in Anthrazit oder Eisenglimmer. Fordern Sie ein unverbindliches Angebot bei ABZ-Zaunsysteme GmbH an — wir erstellen Ihnen eine individuelle Kalkulation, die genau auf Ihr Projekt zugeschnitten ist.',
-      },
-      {
         question: 'Lässt sich ein Frontgitterzaun mit einem Tor kombinieren?',
         answer:
           'Ja, selbstverständlich. Wir bieten passende Einzeldreh-, Doppeldreh- und Schiebetore an, die optisch und technisch perfekt zum Frontgitterzaun passen. Auf Wunsch rüsten wir Ihr Tor zusätzlich mit einem elektrischen Torantrieb aus, sodass Sie den Zugang bequem per Fernbedienung steuern können. So entsteht ein einheitliches und funktionales Gesamtbild.',
-      },
-      {
-        question: 'Bietet ABZ-Zaunsysteme auch professionelle Montage für Frontgitterzäune an?',
-        answer:
-          'Ja, ABZ-Zaunsysteme GmbH bietet einen vollständigen Montageservice für Privat- und Firmenkunden. Von der Vermessung über das Setzen der Fundamente bis zur fertigen Zaunanlage übernehmen wir alles aus einer Hand. Vereinbaren Sie einen Beratungstermin unter +49 21 56 774 50 50 oder besuchen Sie uns in Willich-Neersen.',
       },
     ],
   },
@@ -817,16 +757,6 @@ const categories: CategoryData[] = [
         answer:
           'Sehr pflegeleicht. Dank Feuerverzinkung und Pulverbeschichtung sind die Stahlkomponenten dauerhaft vor Korrosion geschützt. Bei einem Ballfangnetz genügt gelegentliches Prüfen der Spannseile und Befestigungen. Eine aufwendige Wartung oder ein Neuanstrich ist über viele Jahre nicht nötig. So behalten Sie eine funktionsfähige Ballfanganlage mit minimalem Aufwand.',
       },
-      {
-        question: 'Was kostet ein Ballfangzaun?',
-        answer:
-          'Die Kosten hängen von der Höhe, Länge, dem Füllungstyp (Netz oder Doppelstabmatte) und dem Montageaufwand ab. Ein individuelles Angebot erstellen wir Ihnen kostenlos und unverbindlich. Kontaktieren Sie ABZ-Zaunsysteme GmbH unter +49 21 56 774 50 50 oder nutzen Sie unser Kontaktformular — wir melden uns zeitnah mit einer Kalkulation für Ihr Projekt.',
-      },
-      {
-        question: 'Bietet ABZ-Zaunsysteme auch die Montage von Ballfangzäunen an?',
-        answer:
-          'Ja, ABZ-Zaunsysteme GmbH bietet einen vollständigen Montageservice für Ballfangzäune — von der Vermessung über die Fundamenterstellung bis zur fertigen Anlage. Unser erfahrenes Team ist in der Region Willich-Neersen und am gesamten Niederrhein im Einsatz. Vereinbaren Sie einen Beratungstermin unter +49 21 56 774 50 50.',
-      },
     ],
   },
   {
@@ -892,16 +822,6 @@ const categories: CategoryData[] = [
         question: 'Ist Stacheldraht am Zaun erlaubt?',
         answer:
           'Stacheldraht ist in Deutschland grundsätzlich erlaubt, unterliegt aber lokalen Satzungen und Verkehrssicherungspflichten. An öffentlich zugänglichen Bereichen (z. B. Straßengrenze) sind besondere Vorsichtsmaßnahmen erforderlich. Auf gewerblichen Geländen ohne öffentlichen Zugang ist Stacheldraht weit verbreitet. ABZ-Zaunsysteme GmbH berät Sie zu den rechtlichen Rahmenbedingungen in Ihrer Region.',
-      },
-      {
-        question: 'Was kostet ein Übersteigschutz?',
-        answer:
-          'Die Kosten hängen vom gewählten System, der Zaunlänge und dem Montageaufwand ab. Einfache Stacheldrahtlösungen sind sehr wirtschaftlich, während Y-Ausleger-Systeme etwas mehr Aufwand erfordern. Fordern Sie ein unverbindliches Angebot bei ABZ-Zaunsysteme GmbH an — wir kalkulieren individuell für Ihre Anlage.',
-      },
-      {
-        question: 'Bietet ABZ-Zaunsysteme professionelle Montage für Übersteigschutz an?',
-        answer:
-          'Ja, ABZ-Zaunsysteme GmbH übernimmt die komplette Montage Ihres Übersteigschutzes — von der Planung über die Materialbeschaffung bis zur fachgerechten Installation. Unser Team ist in Willich-Neersen und der gesamten Region Niederrhein im Einsatz. Rufen Sie uns an unter +49 21 56 774 50 50.',
       },
     ],
   },
@@ -974,11 +894,6 @@ const categories: CategoryData[] = [
         question: 'Wie lange hält ein Torantrieb?',
         answer:
           'Hochwertige Ditec-Antriebe sind auf Millionen Betätigungszyklen ausgelegt und erreichen bei normaler Nutzung eine Lebensdauer von 15 Jahren und mehr. Regelmäßige Wartung — Schmierung der Laufschienen, Prüfung der Sicherheitselemente — verlängert die Betriebsdauer erheblich. ABZ-Zaunsysteme GmbH bietet auch Wartungsverträge an.',
-      },
-      {
-        question: 'Was kostet ein Torantrieb mit Montage?',
-        answer:
-          'Der Preis richtet sich nach Tortyp (Schiebetor/Drehflügeltor), Torgewicht, gewünschtem Zubehör und Montageaufwand. Kontaktieren Sie ABZ-Zaunsysteme GmbH für ein unverbindliches Angebot — wir kalkulieren individuell auf Basis Ihrer Anlage.',
       },
     ],
   },
@@ -1060,11 +975,6 @@ const categories: CategoryData[] = [
         answer:
           'Standardmäßig sind Höhen von 80 cm bis 200 cm erhältlich. Sonderhöhen sind auf Anfrage möglich. Für Vorgärten empfehlen wir 100–120 cm, für vollständigen Sichtschutz auf Terrassen und in Gärten 160–180 cm.',
       },
-      {
-        question: 'Bietet ABZ-Zaunsysteme Montage für Alu-Sichtschutzzäune an?',
-        answer:
-          'Ja, ABZ-Zaunsysteme GmbH plant und montiert Aluminium-Sichtschutzzäune in Willich-Neersen und der gesamten Region Niederrhein. Von der Vermessung über die Materialauswahl bis zur fertigen Anlage übernehmen wir alles aus einer Hand. Rufen Sie uns an unter +49 21 56 774 50 50.',
-      },
     ],
   },
   {
@@ -1126,11 +1036,6 @@ const categories: CategoryData[] = [
         question: 'Welche Höhen sind beim Metall-Dichtzaun verfügbar?',
         answer:
           'Standardhöhen reichen von 80 cm bis 200 cm. Für vollständigen Sichtschutz empfehlen wir mindestens 160–180 cm. Sonderhöhen sind auf Anfrage erhältlich. ABZ-Zaunsysteme GmbH berät Sie zur optimalen Höhe für Ihren konkreten Einsatzort.',
-      },
-      {
-        question: 'Bietet ABZ-Zaunsysteme Montage für Metall-Dichtzäune an?',
-        answer:
-          'Ja, ABZ-Zaunsysteme GmbH übernimmt Planung und Montage von Metall-Sichtschutzzäunen in Willich-Neersen und der gesamten Region Niederrhein. Fordern Sie Ihr unverbindliches Angebot an unter +49 21 56 774 50 50.',
       },
     ],
   },

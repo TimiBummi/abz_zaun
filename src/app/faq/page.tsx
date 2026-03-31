@@ -90,7 +90,7 @@ const faqCategories: FaqCategory[] = [
       {
         question: 'Welche Sichtschutz-Varianten gibt es?',
         answer:
-          'Wir bieten drei bewährte Sichtschutzsysteme an: Sigma, Delta und Gamma. Jedes System hat eigene Vorteile hinsichtlich Optik, Blickdichte und Windschutz. Alle Varianten sind in verschiedenen Farben erhältlich und lassen sich perfekt mit unseren Zaunsystemen kombinieren.',
+          'Wir bieten vier bewährte Sichtschutzsysteme an: Alpha, Sigma, Delta und Gamma. Jedes System hat eigene Vorteile hinsichtlich Optik, Blickdichte und Windschutz. Alle Varianten sind in verschiedenen Farben erhältlich und lassen sich perfekt mit unseren Zaunsystemen kombinieren.',
       },
       {
         question: 'Wie hoch darf ein Sichtschutz sein?',
@@ -106,7 +106,7 @@ const faqCategories: FaqCategory[] = [
   },
   {
     id: 'montage',
-    label: 'Montage',
+    label: 'Montage & Service',
     items: [
       {
         question: 'Wie lange dauert eine Zaunmontage?',
@@ -123,11 +123,16 @@ const faqCategories: FaqCategory[] = [
         answer:
           'Ja, die fachgerechte Demontage und Entsorgung Ihres alten Zauns gehört zu unserem Leistungsumfang. Wir entfernen den Altzaun inklusive Pfosten und sorgen für eine umweltgerechte Entsorgung. Diese Leistung wird im Angebot separat ausgewiesen.',
       },
+      {
+        question: 'Bieten Sie professionelle Montage an?',
+        answer:
+          'Ja, ABZ-Zaunsysteme GmbH bietet einen vollständigen Montageservice für Privat- und Firmenkunden. Von der Vermessung über das Setzen der Fundamente bis zur fertigen Zaunanlage übernehmen wir alles aus einer Hand — für alle Produkte: Zäune, Tore, Sichtschutz, Gabionen, Torantriebe und mehr. Vereinbaren Sie einen Beratungstermin unter +49 21 56 774 50 50 oder besuchen Sie uns in Willich-Neersen.',
+      },
     ],
   },
   {
     id: 'preise',
-    label: 'Preise',
+    label: 'Preise & Angebot',
     items: [
       {
         question: 'Was kostet ein Doppelstabmattenzaun?',
@@ -143,6 +148,17 @@ const faqCategories: FaqCategory[] = [
         question: 'Gibt es Finanzierungsmöglichkeiten?',
         answer:
           'Auf Anfrage sind individuelle Zahlungsvereinbarungen möglich. Sprechen Sie uns bei der Angebotserstellung einfach auf Ihre Wünsche an, und wir finden gemeinsam eine passende Lösung. Kontaktieren Sie uns für ein persönliches Gespräch.',
+      },
+    ],
+  },
+  {
+    id: 'rechtliches',
+    label: 'Rechtliches & Technik',
+    items: [
+      {
+        question: 'Ist Stacheldraht am Zaun erlaubt?',
+        answer:
+          'Stacheldraht ist in Deutschland grundsätzlich erlaubt, unterliegt aber lokalen Satzungen und Verkehrssicherungspflichten. An öffentlich zugänglichen Bereichen (z. B. Straßengrenze) sind besondere Vorsichtsmaßnahmen erforderlich. Auf gewerblichen Geländen ohne öffentlichen Zugang ist Stacheldraht weit verbreitet. ABZ-Zaunsysteme GmbH berät Sie zu den rechtlichen Rahmenbedingungen in Ihrer Region.',
       },
     ],
   },
