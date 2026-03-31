@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Container from '@/components/Container';
 import Section from '@/components/Section';
+import JsonLd from '@/components/JsonLd';
 import { motion } from 'framer-motion';
 import {
   Award,
@@ -118,12 +119,24 @@ const testimonials = [
 ];
 
 /* ------------------------------------------------------------------ */
+/*  Schema data                                                        */
+/* ------------------------------------------------------------------ */
+
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'ABZ-Zaunsysteme GmbH',
+  url: 'https://www.abz-zaun.de',
+};
+
+/* ------------------------------------------------------------------ */
 /*  Page component                                                     */
 /* ------------------------------------------------------------------ */
 
 export default function Home() {
   return (
     <>
+      <JsonLd data={websiteSchema} />
       {/* ============================================================ */}
       {/* 1. HERO SECTION                                              */}
       {/* ============================================================ */}

@@ -10,15 +10,18 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingContact from "@/components/FloatingContact";
 import JsonLd from "@/components/JsonLd";
+import CookieConsent from "@/components/CookieConsent";
+import MatomoAnalytics from "@/components/MatomoAnalytics";
 
 const localBusinessSchema = {
   '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
-  '@id': 'https://abz-zaun.de/#business',
+  '@type': ['LocalBusiness', 'HomeAndConstructionBusiness'],
+  '@id': 'https://www.abz-zaun.de/#business',
   name: 'ABZ-Zaunsysteme GmbH',
-  image: 'https://abz-zaun.de/images/logo.jpg',
-  url: 'https://abz-zaun.de',
-  telephone: '+4921567745050',
+  url: 'https://www.abz-zaun.de',
+  logo: 'https://www.abz-zaun.de/images/logo.png',
+  image: 'https://www.abz-zaun.de/images/logo.png',
+  telephone: '+49-2156-7745050',
   email: 'info@abz-zaun.de',
   address: {
     '@type': 'PostalAddress',
@@ -32,19 +35,16 @@ const localBusinessSchema = {
     latitude: 51.3167,
     longitude: 6.4167,
   },
-  openingHoursSpecification: {
-    '@type': 'OpeningHoursSpecification',
-    dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-    opens: '09:00',
-    closes: '17:00',
-  },
-  areaServed: {
-    '@type': 'GeoCircle',
-    geoMidpoint: { '@type': 'GeoCoordinates', latitude: 51.3167, longitude: 6.4167 },
-    geoRadius: '50000',
-  },
+  openingHoursSpecification: [
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+      opens: '09:00',
+      closes: '17:00',
+    },
+  ],
+  areaServed: ['Krefeld', 'Mönchengladbach', 'Düsseldorf', 'Duisburg', 'Neuss', 'Willich'],
   priceRange: '€€',
-  sameAs: [],
 };
 
 export const metadata: Metadata = {
@@ -69,6 +69,8 @@ export default function RootLayout({
         <main>{children}</main>
         <Footer />
         <FloatingContact />
+        <CookieConsent />
+        <MatomoAnalytics />
       </body>
     </html>
   );

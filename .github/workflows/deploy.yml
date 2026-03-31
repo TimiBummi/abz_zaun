@@ -2,7 +2,7 @@ name: Build and Deploy
 
 on:
   push:
-    branches: [main]
+    branches: [master]
   # Webhook trigger for Sanity content changes
   repository_dispatch:
     types: [sanity-webhook]

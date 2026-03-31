@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Container from '@/components/Container';
 import Section from '@/components/Section';
 import AnimateIn from '@/components/AnimateIn';
+import JsonLd from '@/components/JsonLd';
 import { Shield, Award, Heart, ArrowRight, Mail, Clock, MapPin } from 'lucide-react';
 
 /* ------------------------------------------------------------------ */
@@ -38,9 +39,19 @@ const values = [
 /*  Page component                                                     */
 /* ------------------------------------------------------------------ */
 
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Startseite', item: 'https://www.abz-zaun.de' },
+    { '@type': 'ListItem', position: 2, name: 'Über uns', item: 'https://www.abz-zaun.de/ueber-uns' },
+  ],
+};
+
 export default function UeberUnsPage() {
   return (
     <>
+      <JsonLd data={breadcrumbSchema} />
       {/* ============================================================ */}
       {/* 1. PAGE HEADER                                               */}
       {/* ============================================================ */}

@@ -152,6 +152,15 @@ const faqCategories: FaqCategory[] = [
 /*  Page                                                               */
 /* ------------------------------------------------------------------ */
 
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Startseite', item: 'https://www.abz-zaun.de' },
+    { '@type': 'ListItem', position: 2, name: 'FAQ', item: 'https://www.abz-zaun.de/faq' },
+  ],
+};
+
 export default function FaqPage() {
   const faqSchema = {
     '@context': 'https://schema.org',
@@ -171,6 +180,7 @@ export default function FaqPage() {
   return (
     <>
       <JsonLd data={faqSchema} />
+      <JsonLd data={breadcrumbSchema} />
       {/* ============================================================ */}
       {/* 1. PAGE HEADER                                               */}
       {/* ============================================================ */}

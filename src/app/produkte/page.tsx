@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Container from '@/components/Container';
 import Section from '@/components/Section';
 import AnimateIn from '@/components/AnimateIn';
+import JsonLd from '@/components/JsonLd';
 import {
   Shield,
   ArrowRightLeft,
@@ -52,9 +53,19 @@ const categories = [
   { slug: 'torantriebe', title: 'Torantriebe', shortDescription: 'Komfort durch Automatisierung', icon: 'Zap' as const, image: null },
 ];
 
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Startseite', item: 'https://www.abz-zaun.de' },
+    { '@type': 'ListItem', position: 2, name: 'Produkte', item: 'https://www.abz-zaun.de/produkte' },
+  ],
+};
+
 export default function ProduktePage() {
   return (
     <>
+      <JsonLd data={breadcrumbSchema} />
       {/* Hero / Intro */}
       <Section background="warm">
         <Container>

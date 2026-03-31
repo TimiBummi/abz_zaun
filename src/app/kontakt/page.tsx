@@ -4,6 +4,7 @@ import Container from '@/components/Container';
 import Section from '@/components/Section';
 import AnimateIn from '@/components/AnimateIn';
 import QuoteWizard from '@/components/QuoteWizard';
+import JsonLd from '@/components/JsonLd';
 import {
   Phone,
   Mail,
@@ -26,9 +27,19 @@ export const metadata: Metadata = {
   },
 };
 
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Startseite', item: 'https://www.abz-zaun.de' },
+    { '@type': 'ListItem', position: 2, name: 'Kontakt & Angebot', item: 'https://www.abz-zaun.de/kontakt' },
+  ],
+};
+
 export default function KontaktPage() {
   return (
     <>
+      <JsonLd data={breadcrumbSchema} />
       {/* ============================================================ */}
       {/* PAGE HEADER                                                   */}
       {/* ============================================================ */}
