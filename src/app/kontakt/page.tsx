@@ -15,12 +15,12 @@ import {
 
 export const metadata: Metadata = {
   title: 'Kontakt & Angebot anfordern',
-  description: 'Fordern Sie ein kostenloses Angebot an oder kontaktieren Sie ABZ Zaunsysteme direkt. Wir beraten Sie gerne zu Zäunen, Toren und Sichtschutz.',
+  description: 'Fordern Sie ein kostenloses Angebot an oder kontaktieren Sie ABZ-Zaunsysteme direkt. Wir beraten Sie gerne zu Zäunen, Toren und Sichtschutz.',
   openGraph: {
-    title: 'Kontakt & Angebot anfordern | ABZ Zaunsysteme',
-    description: 'Fordern Sie ein kostenloses Angebot an oder kontaktieren Sie ABZ Zaunsysteme direkt. Wir beraten Sie gerne zu Zäunen, Toren und Sichtschutz.',
+    title: 'Kontakt & Angebot anfordern | ABZ-Zaunsysteme',
+    description: 'Fordern Sie ein kostenloses Angebot an oder kontaktieren Sie ABZ-Zaunsysteme direkt. Wir beraten Sie gerne zu Zäunen, Toren und Sichtschutz.',
     url: 'https://abz-zaun.de/kontakt',
-    siteName: 'ABZ Zaunsysteme',
+    siteName: 'ABZ-Zaunsysteme',
     locale: 'de_DE',
     type: 'website',
   },
@@ -127,7 +127,7 @@ export default function KontaktPage() {
                     <div>
                       <p className="text-sm font-medium text-warm-brown">Adresse</p>
                       <p className="font-heading font-semibold text-charcoal">
-                        ABZ Zaunsysteme GmbH
+                        ABZ-Zaunsysteme GmbH
                       </p>
                       <p className="text-sm text-body-text">
                         Virmondstrasse 137

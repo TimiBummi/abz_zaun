@@ -12,10 +12,10 @@ export const metadata = {
   title: 'Referenzen - Unsere Projekte',
   description: 'Überzeugen Sie sich von unseren erfolgreich realisierten Zaunprojekten am Niederrhein. Referenzen für Privatkunden und Gewerbe.',
   openGraph: {
-    title: 'Referenzen - Unsere Projekte | ABZ Zaunsysteme',
+    title: 'Referenzen - Unsere Projekte | ABZ-Zaunsysteme',
     description: 'Überzeugen Sie sich von unseren erfolgreich realisierten Zaunprojekten am Niederrhein. Referenzen für Privatkunden und Gewerbe.',
     url: 'https://abz-zaun.de/referenzen',
-    siteName: 'ABZ Zaunsysteme',
+    siteName: 'ABZ-Zaunsysteme',
     locale: 'de_DE',
     type: 'website',
   },

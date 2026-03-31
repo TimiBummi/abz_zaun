@@ -6,8 +6,7 @@ const produkteLinks = [
   { href: '/produkte/doppelstabmattenzaun', label: 'Doppelstabmattenzaun' },
   { href: '/produkte/schiebetore', label: 'Schiebetore' },
   { href: '/produkte/sichtschutz', label: 'Sichtschutz' },
-  { href: '/produkte/gabionen', label: 'Gabionen' },
-  { href: '/produkte/torantriebe', label: 'Torantriebe' },
+  { href: '/produkte', label: 'Alle Produkte →' },
 ];
 
 const serviceLinks = [
@@ -55,7 +54,7 @@ export default function Footer() {
             {/* Column 1: Company Info */}
             <div>
               <div className="mb-4">
-                <span className="text-2xl font-bold italic text-abz-red font-heading">ABZ</span>{' '}
+                <span className="text-2xl font-bold italic text-abz-red font-heading">ABZ<span className="relative -top-[3px] text-base">-</span></span>{' '}
                 <span className="text-lg font-medium text-white font-heading">Zaunsysteme GmbH</span>
               </div>
               <address className="not-italic space-y-3 text-sm">

@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import Container from '@/components/Container';
 import Section from '@/components/Section';
 import { motion } from 'framer-motion';
@@ -28,41 +29,49 @@ const productCategories = [
     name: 'Doppelstabmattenzaun',
     slug: 'doppelstabmattenzaun',
     description: 'Robust, langlebig und vielseitig — der Klassiker für Haus und Gewerbe.',
+    image: '/images/produkte/doppelstabmattenzaun/doppelstabmattenzaun-wohnanlage.jpg',
   },
   {
     name: 'Schiebetore',
     slug: 'schiebetore',
     description: 'Platzsparende Torlösungen mit optionalem elektrischem Antrieb.',
+    image: '/images/produkte/schiebetore/schiebetor-anthrazit-lamellen-wohnhaus.jpg',
   },
   {
     name: 'Drehflügeltore',
     slug: 'drehfluegeltore',
     description: 'Elegante Einfahrtstore für jede Grundstücksbreite.',
+    image: '/images/produkte/drehfluegeltore/drehfluegeltor-doppel-anthrazit-lamellen-wohnhaus.jpg',
   },
   {
     name: 'Sichtschutz',
     slug: 'sichtschutz',
     description: 'Privatsphäre und Design vereint — in vielen Varianten erhältlich.',
+    image: '/images/produkte/sichtschutz/sichtschutz-delta-anthrazit-garten.jpg',
   },
   {
     name: 'Gabionen',
     slug: 'gabionen',
     description: 'Natürliche Steinelemente als Zaun, Mauer oder Gestaltungselement.',
+    image: '/images/produkte/gabionen/gabionen-anthrazit-mit-tor.jpg',
   },
   {
     name: 'Maschendrahtzaun',
     slug: 'maschendrahtzaun',
     description: 'Die wirtschaftliche Lösung für Grundstückseinfriedungen.',
+    image: null,
   },
   {
     name: 'Zierzaun',
     slug: 'zierzaun',
     description: 'Dekorative Zäune mit individuellem Charakter für Ihren Garten.',
+    image: '/images/produkte/zierzaun/zierzaun-anthrazit-einfahrt-wohnhaus.jpg',
   },
   {
     name: 'Torantriebe',
     slug: 'torantriebe',
     description: 'Komfort per Knopfdruck — automatische Antriebe für alle Torarten.',
+    image: null,
   },
 ];
 
@@ -129,7 +138,7 @@ export default function Home() {
             className="mb-12"
           >
             <div className="flex items-baseline gap-1.5">
-              <span className="text-2xl font-bold italic text-abz-red font-heading">ABZ</span>
+              <span className="text-2xl font-bold italic text-abz-red font-heading">ABZ<span className="relative -top-[3px] text-base">-</span></span>
               <span className="text-lg font-medium text-charcoal font-heading">Zaunsysteme</span>
             </div>
             <p className="mt-1 text-xs tracking-widest uppercase text-warm-brown">
@@ -289,18 +298,24 @@ export default function Home() {
                     i === 0 ? 'sm:p-8' : ''
                   }`}
                 >
-                  {/* Placeholder visual area */}
-                  <div
-                    className={`mb-4 flex items-center justify-center rounded-xl bg-warm-gray ${
-                      i === 0 ? 'h-48 sm:h-64' : 'h-28'
-                    }`}
-                  >
-                    <span className={`font-bold text-charcoal/8 font-heading ${
-                      i === 0 ? 'text-5xl' : 'text-2xl'
-                    }`}>
-                      ABZ
-                    </span>
-                  </div>
+                  {/* Product image */}
+                  {product.image ? (
+                    <div className={`relative mb-4 overflow-hidden rounded-xl ${i === 0 ? 'h-48 sm:h-64' : 'h-28'}`}>
+                      <Image
+                        src={product.image}
+                        alt={product.name}
+                        fill
+                        className="object-cover transition-transform duration-500 group-hover:scale-105"
+                        sizes={i === 0 ? '(max-width: 640px) 100vw, 50vw' : '(max-width: 640px) 100vw, 25vw'}
+                      />
+                    </div>
+                  ) : (
+                    <div className={`mb-4 flex items-center justify-center rounded-xl bg-warm-gray ${i === 0 ? 'h-48 sm:h-64' : 'h-28'}`}>
+                      <span className={`font-bold text-charcoal/8 font-heading ${i === 0 ? 'text-5xl' : 'text-2xl'}`}>
+                        ABZ-
+                      </span>
+                    </div>
+                  )}
                   <h3 className={`font-heading font-semibold text-charcoal ${
                     i === 0 ? 'text-xl sm:text-2xl' : 'text-base'
                   }`}>

@@ -9,7 +9,7 @@ import { Shield, Award, Heart, ArrowRight, Mail, Clock, MapPin } from 'lucide-re
 /* ------------------------------------------------------------------ */
 
 export const metadata = {
-  title: 'Über uns - ABZ Zaunsysteme',
+  title: 'Über uns - ABZ-Zaunsysteme',
 };
 
 /* ------------------------------------------------------------------ */
@@ -49,7 +49,7 @@ export default function UeberUnsPage() {
           <AnimateIn>
             <div className="mx-auto max-w-3xl text-center">
               <h1 className="font-heading text-4xl font-bold text-charcoal sm:text-5xl">
-                Über ABZ Zaunsysteme
+                Über ABZ-Zaunsysteme
               </h1>
               <p className="mt-6 text-xl leading-relaxed text-body-text">
                 Seit über 20 Jahren Ihr Partner für Zaunsysteme am Niederrhein
@@ -72,7 +72,7 @@ export default function UeberUnsPage() {
                 Wer wir sind
               </h2>
               <p className="mt-6 text-base leading-relaxed text-body-text">
-                ABZ Zaunsysteme ist ein inhabergeführtes Unternehmen mit Sitz in
+                ABZ-Zaunsysteme ist ein inhabergeführtes Unternehmen mit Sitz in
                 Willich-Neersen. Seit unserer Gründung stehen wir für
                 zuverlässige Qualität, faire Preise und persönliche Beratung.
                 Als familienorientierter Betrieb liegt uns die Zufriedenheit

@@ -49,10 +49,10 @@ const localBusinessSchema = {
 
 export const metadata: Metadata = {
   title: {
-    default: 'ABZ Zaunsysteme GmbH - Zäune, Tore & Sichtschutz',
-    template: '%s | ABZ Zaunsysteme',
+    default: 'ABZ-Zaunsysteme GmbH - Zäune, Tore & Sichtschutz',
+    template: '%s | ABZ-Zaunsysteme',
   },
-  description: 'ABZ Zaunsysteme GmbH in Willich - Ihr Experte für Doppelstabmattenzäune, Tore, Sichtschutz und Gabionen. Kostenlose Beratung und professionelle Montage.',
+  description: 'ABZ-Zaunsysteme GmbH in Willich - Ihr Experte für Doppelstabmattenzäune, Tore, Sichtschutz und Gabionen. Kostenlose Beratung und professionelle Montage.',
   metadataBase: new URL('https://abz-zaun.de'),
 };
 

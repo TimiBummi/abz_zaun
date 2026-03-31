@@ -24,7 +24,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-baseline gap-1 shrink-0">
             <span className="text-2xl sm:text-3xl font-bold italic text-abz-red font-heading">
-              ABZ
+              ABZ<span className="relative -top-[3px] text-base sm:text-lg">-</span>
             </span>
             <span className="text-lg sm:text-xl font-medium text-charcoal font-heading">
               Zaunsysteme

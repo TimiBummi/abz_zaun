@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import Container from '@/components/Container';
 import Section from '@/components/Section';
 import AnimateIn from '@/components/AnimateIn';
@@ -20,10 +21,10 @@ export const metadata: Metadata = {
   description:
     'Entdecken Sie unser umfangreiches Sortiment an Zaunsystemen, Toren und Zubehör. Doppelstabmattenzäune, Schiebetore, Sichtschutz, Gabionen und mehr.',
   openGraph: {
-    title: 'Produkte - Zäune, Tore & Sichtschutz | ABZ Zaunsysteme',
+    title: 'Produkte - Zäune, Tore & Sichtschutz | ABZ-Zaunsysteme',
     description: 'Entdecken Sie unser umfangreiches Sortiment an Zaunsystemen, Toren und Zubehör. Doppelstabmattenzäune, Schiebetore, Sichtschutz, Gabionen und mehr.',
     url: 'https://abz-zaun.de/produkte',
-    siteName: 'ABZ Zaunsysteme',
+    siteName: 'ABZ-Zaunsysteme',
     locale: 'de_DE',
     type: 'website',
   },
@@ -41,14 +42,14 @@ const iconMap = {
 } as const;
 
 const categories = [
-  { slug: 'doppelstabmattenzaun', title: 'Doppelstabmattenzaun', shortDescription: 'Der Klassiker für Sicherheit und Langlebigkeit', icon: 'Shield' as const },
-  { slug: 'schiebetore', title: 'Schiebetore', shortDescription: 'Platzsparende Torlösungen für jede Zufahrt', icon: 'ArrowRightLeft' as const },
-  { slug: 'drehfluegeltore', title: 'Drehflügeltore', shortDescription: 'Klassische Tore mit elegantem Design', icon: 'DoorOpen' as const },
-  { slug: 'sichtschutz', title: 'Sichtschutz', shortDescription: 'Privatsphäre für Ihren Garten', icon: 'Eye' as const },
-  { slug: 'gabionen', title: 'Gabionen', shortDescription: 'Natürliche Gestaltung mit Steinkörben', icon: 'Layers' as const },
-  { slug: 'maschendrahtzaun', title: 'Maschendrahtzaun', shortDescription: 'Die wirtschaftliche Lösung für große Flächen', icon: 'Grid3x3' as const },
-  { slug: 'zierzaun', title: 'Zierzaun', shortDescription: 'Elegante Zäune mit dekorativem Charakter', icon: 'Sparkles' as const },
-  { slug: 'torantriebe', title: 'Torantriebe', shortDescription: 'Komfort durch Automatisierung', icon: 'Zap' as const },
+  { slug: 'doppelstabmattenzaun', title: 'Doppelstabmattenzaun', shortDescription: 'Der Klassiker für Sicherheit und Langlebigkeit', icon: 'Shield' as const, image: '/images/produkte/doppelstabmattenzaun/doppelstabmattenzaun-wohnanlage.jpg' },
+  { slug: 'schiebetore', title: 'Schiebetore', shortDescription: 'Platzsparende Torlösungen für jede Zufahrt', icon: 'ArrowRightLeft' as const, image: '/images/produkte/schiebetore/schiebetor-anthrazit-lamellen-wohnhaus.jpg' },
+  { slug: 'drehfluegeltore', title: 'Drehflügeltore', shortDescription: 'Klassische Tore mit elegantem Design', icon: 'DoorOpen' as const, image: '/images/produkte/drehfluegeltore/drehfluegeltor-doppel-anthrazit-lamellen-wohnhaus.jpg' },
+  { slug: 'sichtschutz', title: 'Sichtschutz', shortDescription: 'Privatsphäre für Ihren Garten', icon: 'Eye' as const, image: '/images/produkte/sichtschutz/sichtschutz-delta-anthrazit-garten.jpg' },
+  { slug: 'gabionen', title: 'Gabionen', shortDescription: 'Natürliche Gestaltung mit Steinkörben', icon: 'Layers' as const, image: '/images/produkte/gabionen/gabionen-anthrazit-mit-tor.jpg' },
+  { slug: 'maschendrahtzaun', title: 'Maschendrahtzaun', shortDescription: 'Die wirtschaftliche Lösung für große Flächen', icon: 'Grid3x3' as const, image: null },
+  { slug: 'zierzaun', title: 'Zierzaun', shortDescription: 'Elegante Zäune mit dekorativem Charakter', icon: 'Sparkles' as const, image: '/images/produkte/zierzaun/zierzaun-anthrazit-einfahrt-wohnhaus.jpg' },
+  { slug: 'torantriebe', title: 'Torantriebe', shortDescription: 'Komfort durch Automatisierung', icon: 'Zap' as const, image: null },
 ];
 
 export default function ProduktePage() {
@@ -86,12 +87,22 @@ export default function ProduktePage() {
                       isAlt ? 'bg-warm-white' : 'bg-white'
                     }`}
                   >
-                    {/* Placeholder image area */}
-                    <div className={`mb-5 flex h-36 items-center justify-center rounded-xl ${
-                      isAlt ? 'bg-warm-gray' : 'bg-warm-white'
-                    }`}>
-                      <Icon className="h-12 w-12 text-warm-brown transition-colors group-hover:text-abz-red" />
-                    </div>
+                    {/* Product image */}
+                    {category.image ? (
+                      <div className="relative mb-5 h-36 overflow-hidden rounded-xl">
+                        <Image
+                          src={category.image}
+                          alt={category.title}
+                          fill
+                          className="object-cover transition-transform duration-500 group-hover:scale-105"
+                          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                        />
+                      </div>
+                    ) : (
+                      <div className={`mb-5 flex h-36 items-center justify-center rounded-xl ${isAlt ? 'bg-warm-gray' : 'bg-warm-white'}`}>
+                        <Icon className="h-12 w-12 text-warm-brown transition-colors group-hover:text-abz-red" />
+                      </div>
+                    )}
 
                     <h2 className="font-heading text-lg font-semibold text-charcoal">
                       {category.title}
