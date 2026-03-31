@@ -14,6 +14,7 @@ const serviceLinks = [
   { href: '/kontakt', label: 'Beratung' },
   { href: '/faq', label: 'FAQ' },
   { href: '/referenzen', label: 'Referenzen' },
+  { href: '/bedienungsanleitung.pdf', label: 'Bedienungsanleitung (PDF)' },
 ];
 
 const rechtlichesLinks = [
@@ -99,9 +100,15 @@ export default function Footer() {
               <ul className="space-y-2.5 text-sm">
                 {serviceLinks.map((link) => (
                   <li key={link.href}>
-                    <Link href={link.href} className="hover:text-white transition-colors">
-                      {link.label}
-                    </Link>
+                    {link.href.endsWith('.pdf') ? (
+                      <a href={link.href} download className="hover:text-white transition-colors">
+                        {link.label}
+                      </a>
+                    ) : (
+                      <Link href={link.href} className="hover:text-white transition-colors">
+                        {link.label}
+                      </Link>
+                    )}
                   </li>
                 ))}
               </ul>

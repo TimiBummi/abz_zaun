@@ -10,6 +10,7 @@ import {
   Check,
   CheckSquare,
   ArrowRight,
+  FileDown,
 } from 'lucide-react';
 
 export const metadata = {
@@ -214,7 +215,40 @@ export default function MontagePage() {
       </Section>
 
       {/* ============================================================ */}
-      {/* 5. CTA                                                       */}
+      {/* 5. BEDIENUNGSANLEITUNG DOWNLOAD                              */}
+      {/* ============================================================ */}
+      <Section background="warm">
+        <Container>
+          <AnimateIn>
+            <div className="mx-auto max-w-3xl">
+              <div className="flex flex-col sm:flex-row items-center gap-6 rounded-2xl border border-warm-gray-dark/50 bg-warm-white p-8">
+                <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-xl bg-abz-red/10 text-abz-red">
+                  <FileDown className="h-8 w-8" />
+                </div>
+                <div className="flex-1 text-center sm:text-left">
+                  <h2 className="font-heading text-xl font-bold text-charcoal">
+                    Bedienungsanleitung
+                  </h2>
+                  <p className="mt-1 text-body-text">
+                    Anleitungen für Ihre ABZ-Produkte als PDF zum Herunterladen.
+                  </p>
+                </div>
+                <a
+                  href="/bedienungsanleitung.pdf"
+                  download
+                  className="inline-flex shrink-0 items-center gap-2 rounded-lg bg-abz-red px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-abz-red-dark"
+                >
+                  <FileDown className="h-4 w-4" />
+                  PDF herunterladen
+                </a>
+              </div>
+            </div>
+          </AnimateIn>
+        </Container>
+      </Section>
+
+      {/* ============================================================ */}
+      {/* 6. CTA                                                       */}
       {/* ============================================================ */}
       <Section background="warm">
         <Container>
