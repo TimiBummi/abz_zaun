@@ -61,9 +61,9 @@ export default function Footer() {
                 <Image
                   src="/images/logo.png"
                   alt="ABZ-Zaunsysteme GmbH"
-                  width={160}
-                  height={42}
-                  className="h-9 w-auto brightness-0 invert"
+                  width={433}
+                  height={312}
+                  className="h-14 w-auto rounded-sm"
                 />
               </div>
               {/* Text logo (fallback — restore by swapping comments)

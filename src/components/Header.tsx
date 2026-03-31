@@ -28,9 +28,9 @@ export default function Header() {
             <Image
               src="/images/logo.png"
               alt="ABZ-Zaunsysteme GmbH"
-              width={180}
-              height={48}
-              className="h-10 sm:h-12 w-auto"
+              width={433}
+              height={312}
+              className="h-11 sm:h-14 w-auto"
               priority
             />
             {/* Text logo (fallback — restore by swapping comments)
