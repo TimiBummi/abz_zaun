@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Mail, MapPin, Clock, Heart } from 'lucide-react';
 import Container from './Container';
 
@@ -15,6 +16,7 @@ const serviceLinks = [
   { href: '/faq', label: 'FAQ' },
   { href: '/referenzen', label: 'Referenzen' },
   { href: '/bedienungsanleitung.pdf', label: 'Bedienungsanleitung (PDF)' },
+  { href: '/produktkatalog.pdf', label: 'Produktkatalog (PDF)' },
 ];
 
 const rechtlichesLinks = [
@@ -54,10 +56,22 @@ export default function Footer() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
             {/* Column 1: Company Info */}
             <div>
+              {/* Image logo — drop file at public/images/logo.png to activate */}
+              <div className="mb-4">
+                <Image
+                  src="/images/logo.png"
+                  alt="ABZ-Zaunsysteme GmbH"
+                  width={160}
+                  height={42}
+                  className="h-9 w-auto brightness-0 invert"
+                />
+              </div>
+              {/* Text logo (fallback — restore by swapping comments)
               <div className="mb-4">
                 <span className="text-2xl font-bold italic text-abz-red font-heading">ABZ<span className="relative -top-[3px] text-base">-</span></span>{' '}
                 <span className="text-lg font-medium text-white font-heading">Zaunsysteme GmbH</span>
               </div>
+              */}
               <address className="not-italic space-y-3 text-sm">
                 <div className="flex items-start gap-2.5">
                   <MapPin className="w-4 h-4 mt-0.5 shrink-0 text-warm-gray-dark" />

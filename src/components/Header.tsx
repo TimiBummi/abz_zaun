@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Menu, X, ExternalLink } from 'lucide-react';
 import Container from './Container';
 
@@ -22,13 +23,26 @@ export default function Header() {
       <Container>
         <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-baseline gap-1 shrink-0">
-            <span className="text-2xl sm:text-3xl font-bold italic text-abz-red font-heading">
-              ABZ<span className="relative -top-[3px] text-base sm:text-lg">-</span>
+          <Link href="/" className="shrink-0">
+            {/* Image logo — drop file at public/images/logo.png to activate */}
+            <Image
+              src="/images/logo.png"
+              alt="ABZ-Zaunsysteme GmbH"
+              width={180}
+              height={48}
+              className="h-10 sm:h-12 w-auto"
+              priority
+            />
+            {/* Text logo (fallback — restore by swapping comments)
+            <span className="flex items-baseline gap-1">
+              <span className="text-2xl sm:text-3xl font-bold italic text-abz-red font-heading">
+                ABZ<span className="relative -top-[3px] text-base sm:text-lg">-</span>
+              </span>
+              <span className="text-lg sm:text-xl font-medium text-charcoal font-heading">
+                Zaunsysteme
+              </span>
             </span>
-            <span className="text-lg sm:text-xl font-medium text-charcoal font-heading">
-              Zaunsysteme
-            </span>
+            */}
           </Link>
 
           {/* Desktop Nav */}
