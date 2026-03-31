@@ -9,7 +9,7 @@ const navLinks = [
   { href: '/produkte', label: 'Produkte' },
   { href: '/referenzen', label: 'Referenzen' },
   { href: '/ueber-uns', label: 'Über uns' },
-  { href: '/montage-service', label: 'Montage & Service' },
+  { href: '/montage', label: 'Montage & Service' },
   { href: '/faq', label: 'FAQ' },
   { href: '/kontakt', label: 'Kontakt' },
 ];

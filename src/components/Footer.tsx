@@ -10,7 +10,7 @@ const produkteLinks = [
 ];
 
 const serviceLinks = [
-  { href: '/montage-service', label: 'Montage' },
+  { href: '/montage', label: 'Montage' },
   { href: '/kontakt', label: 'Beratung' },
   { href: '/faq', label: 'FAQ' },
   { href: '/referenzen', label: 'Referenzen' },

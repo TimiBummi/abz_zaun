@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Container from '@/components/Container';
 import Section from '@/components/Section';
 import AnimateIn from '@/components/AnimateIn';
+import CtaBanner from '@/components/CtaBanner';
 import QuoteWizard from '@/components/QuoteWizard';
 import JsonLd from '@/components/JsonLd';
 import {
@@ -11,7 +12,6 @@ import {
   MessageCircle,
   MapPin,
   Clock,
-  ArrowRight,
 } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -180,29 +180,12 @@ export default function KontaktPage() {
       {/* ============================================================ */}
       {/* CTA BAR                                                       */}
       {/* ============================================================ */}
-      <Section background="charcoal" className="py-10 sm:py-12">
-        <Container>
-          <AnimateIn>
-            <div className="flex flex-col items-center justify-between gap-6 text-center sm:flex-row sm:text-left">
-              <div>
-                <h2 className="font-heading text-2xl font-bold text-white">
-                  Lieber direkt anrufen?
-                </h2>
-                <p className="mt-1 text-warm-gray">
-                  Wir beraten Sie gerne persönlich.
-                </p>
-              </div>
-              <a
-                href="tel:+4921567745050"
-                className="inline-flex items-center gap-3 rounded-lg bg-abz-red px-7 py-3.5 text-lg font-semibold text-white shadow-lg shadow-abz-red/25 transition-all hover:bg-abz-red-dark"
-              >
-                <Phone className="h-5 w-5" />
-                +49 2156 774 50 50
-              </a>
-            </div>
-          </AnimateIn>
-        </Container>
-      </Section>
+      <CtaBanner
+        heading="Lieber direkt anrufen?"
+        subtext="Wir beraten Sie gerne persönlich."
+        buttonLabel="+49 2156 774 50 50"
+        buttonHref="tel:+4921567745050"
+      />
     </>
   );
 }

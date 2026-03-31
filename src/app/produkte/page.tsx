@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Container from '@/components/Container';
 import Section from '@/components/Section';
 import AnimateIn from '@/components/AnimateIn';
+import CtaBanner from '@/components/CtaBanner';
 import JsonLd from '@/components/JsonLd';
 import {
   Shield,
@@ -89,14 +90,11 @@ export default function ProduktePage() {
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {categories.map((category, index) => {
               const Icon = iconMap[category.icon];
-              const isAlt = index % 2 === 1;
               return (
                 <AnimateIn key={category.slug} delay={index * 0.1}>
                   <Link
                     href={`/produkte/${category.slug}`}
-                    className={`group flex h-full flex-col rounded-2xl border border-warm-gray-dark/50 p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg ${
-                      isAlt ? 'bg-warm-white' : 'bg-white'
-                    }`}
+                    className="group flex h-full flex-col rounded-2xl border border-warm-gray-dark/50 p-6 bg-warm-white transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
                   >
                     {/* Product image */}
                     {category.image ? (
@@ -110,7 +108,7 @@ export default function ProduktePage() {
                         />
                       </div>
                     ) : (
-                      <div className={`mb-5 flex h-36 items-center justify-center rounded-xl ${isAlt ? 'bg-warm-gray' : 'bg-warm-white'}`}>
+                      <div className="mb-5 flex h-36 items-center justify-center rounded-xl bg-warm-gray">
                         <Icon className="h-12 w-12 text-warm-brown transition-colors group-hover:text-abz-red" />
                       </div>
                     )}
@@ -134,28 +132,12 @@ export default function ProduktePage() {
       </Section>
 
       {/* CTA Banner */}
-      <Section background="charcoal">
-        <Container>
-          <AnimateIn>
-            <div className="flex flex-col items-center text-center">
-              <h2 className="font-heading text-2xl font-bold text-white sm:text-3xl">
-                Nicht sicher, welcher Zaun der richtige ist?
-              </h2>
-              <p className="mt-3 max-w-xl text-white/70 font-body">
-                Wir beraten Sie gerne — kostenlos und unverbindlich. Gemeinsam finden wir die
-                passende Lösung für Ihr Grundstück.
-              </p>
-              <Link
-                href="/kontakt"
-                className="mt-8 inline-flex items-center gap-2 rounded-lg bg-abz-red px-8 py-3.5 font-heading font-semibold text-white transition-colors hover:bg-abz-red-dark"
-              >
-                Jetzt beraten lassen
-                <ArrowRight className="h-5 w-5" />
-              </Link>
-            </div>
-          </AnimateIn>
-        </Container>
-      </Section>
+      <CtaBanner
+        heading="Nicht sicher, welcher Zaun der richtige ist?"
+        subtext="Wir beraten Sie gerne — kostenlos und unverbindlich. Gemeinsam finden wir die passende Lösung für Ihr Grundstück."
+        buttonLabel="Jetzt beraten lassen"
+        buttonHref="/kontakt"
+      />
     </>
   );
 }

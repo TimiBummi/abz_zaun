@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Container from '@/components/Container';
 import Section from '@/components/Section';
+import CtaBanner from '@/components/CtaBanner';
 import JsonLd from '@/components/JsonLd';
 import { motion } from 'framer-motion';
 import {
@@ -14,7 +15,6 @@ import {
   MapPin,
   Quote,
   HeadphonesIcon,
-  Phone,
   ShoppingBag,
   Truck,
   Globe,
@@ -412,42 +412,14 @@ export default function Home() {
       {/* ============================================================ */}
       {/* 4. CTA BANNER                                                */}
       {/* ============================================================ */}
-      <section className="bg-charcoal py-16">
-        <Container>
-          <motion.div
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="flex flex-col items-center gap-8 text-center md:flex-row md:text-left"
-          >
-            <div className="flex-1">
-              <h2 className="font-heading text-3xl font-bold text-white sm:text-4xl">
-                Lassen Sie sich kostenlos beraten
-              </h2>
-              <p className="mt-3 text-lg text-warm-gray">
-                Wir helfen Ihnen, die perfekte Zaunlösung zu finden — persönlich
-                und unverbindlich.
-              </p>
-            </div>
-            <div className="flex flex-col items-center gap-4 sm:flex-row">
-              <Link
-                href="/kontakt"
-                className="inline-flex items-center justify-center gap-2 rounded-lg bg-abz-red px-7 py-3.5 text-base font-semibold text-white shadow-lg shadow-abz-red/25 transition-all hover:bg-abz-red-dark hover:shadow-xl"
-              >
-                Angebot anfordern
-                <ArrowRight className="h-4 w-4" />
-              </Link>
-              <a
-                href="tel:+4921567745050"
-                className="inline-flex items-center justify-center gap-2 rounded-lg border-2 border-white/20 px-7 py-3.5 text-base font-semibold text-white transition-all hover:border-white/40 hover:bg-white/5"
-              >
-                <Phone className="h-4 w-4" />
-                Anrufen
-              </a>
-            </div>
-          </motion.div>
-        </Container>
-      </section>
+      <CtaBanner
+        heading="Lassen Sie sich kostenlos beraten"
+        subtext="Wir helfen Ihnen, die perfekte Zaunlösung zu finden — persönlich und unverbindlich."
+        buttonLabel="Angebot anfordern"
+        buttonHref="/kontakt"
+        secondaryButtonLabel="Anrufen"
+        secondaryButtonHref="tel:+4921567745050"
+      />
 
       {/* ============================================================ */}
       {/* 5. REFERENCE PREVIEW                                         */}

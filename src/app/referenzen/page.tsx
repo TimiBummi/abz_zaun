@@ -1,8 +1,8 @@
-import Link from 'next/link';
 import Container from '@/components/Container';
 import Section from '@/components/Section';
 import AnimateIn from '@/components/AnimateIn';
-import { MapPin, ArrowRight } from 'lucide-react';
+import CtaBanner from '@/components/CtaBanner';
+import { MapPin } from 'lucide-react';
 
 /* ------------------------------------------------------------------ */
 /*  Metadata                                                           */
@@ -180,30 +180,12 @@ export default function ReferenzenPage() {
       {/* ============================================================ */}
       {/* 4. CTA                                                       */}
       {/* ============================================================ */}
-      <Section background="charcoal">
-        <Container>
-          <AnimateIn>
-            <div className="mx-auto max-w-2xl text-center">
-              <h2 className="font-heading text-3xl font-bold text-white sm:text-4xl">
-                Ihr Projekt könnte das nächste sein
-              </h2>
-              <p className="mt-4 text-lg text-white/70">
-                Erzählen Sie uns von Ihrem Vorhaben — wir beraten Sie gerne
-                unverbindlich und erstellen Ihnen ein individuelles Angebot.
-              </p>
-              <div className="mt-8">
-                <Link
-                  href="/kontakt"
-                  className="inline-flex items-center justify-center gap-2 rounded-lg bg-abz-red px-7 py-3.5 text-base font-semibold text-white shadow-lg shadow-abz-red/25 transition-all hover:bg-abz-red-dark hover:shadow-xl"
-                >
-                  Jetzt Angebot anfordern
-                  <ArrowRight className="h-4 w-4" />
-                </Link>
-              </div>
-            </div>
-          </AnimateIn>
-        </Container>
-      </Section>
+      <CtaBanner
+        heading="Ihr Projekt könnte das nächste sein"
+        subtext="Erzählen Sie uns von Ihrem Vorhaben — wir beraten Sie gerne unverbindlich und erstellen Ihnen ein individuelles Angebot."
+        buttonLabel="Jetzt Angebot anfordern"
+        buttonHref="/kontakt"
+      />
     </>
   );
 }
