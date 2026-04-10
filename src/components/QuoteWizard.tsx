@@ -14,6 +14,7 @@ import {
   HelpCircle,
   ChevronRight,
   ChevronLeft,
+  ChevronDown,
   CheckCircle,
   Loader2,
 } from 'lucide-react';
@@ -87,6 +88,9 @@ const salutationOptions = ['Herr', 'Frau', 'Divers'];
 
 const inputClass =
   'w-full rounded-lg border border-warm-gray-dark bg-white px-4 py-3 text-charcoal placeholder:text-warm-brown focus:border-abz-red focus:outline-none focus:ring-2 focus:ring-abz-red/20 min-h-12';
+
+const selectClass =
+  'w-full appearance-none rounded-lg border border-warm-gray-dark bg-white px-4 py-3 pr-10 text-charcoal focus:border-abz-red focus:outline-none focus:ring-2 focus:ring-abz-red/20 min-h-12';
 
 /* ------------------------------------------------------------------ */
 /*  Step indicator                                                     */
@@ -316,19 +320,22 @@ export default function QuoteWizard() {
               <label htmlFor="length" className="mb-1.5 block text-sm font-medium text-charcoal">
                 Ungefähre Länge
               </label>
-              <select
-                id="length"
-                value={formData.length}
-                onChange={(e) => update('length', e.target.value)}
-                className={inputClass}
-              >
-                <option value="">Bitte wählen</option>
-                {lengthOptions.map((o) => (
-                  <option key={o} value={o}>
-                    {o}
-                  </option>
-                ))}
-              </select>
+              <div className="relative">
+                <select
+                  id="length"
+                  value={formData.length}
+                  onChange={(e) => update('length', e.target.value)}
+                  className={selectClass}
+                >
+                  <option value="">Bitte wählen</option>
+                  {lengthOptions.map((o) => (
+                    <option key={o} value={o}>
+                      {o}
+                    </option>
+                  ))}
+                </select>
+                <ChevronDown className="pointer-events-none absolute right-3 top-1/2 h-4 w-4 -translate-y-1/2 text-warm-brown" />
+              </div>
             </div>
 
             {/* Height */}
@@ -336,19 +343,22 @@ export default function QuoteWizard() {
               <label htmlFor="height" className="mb-1.5 block text-sm font-medium text-charcoal">
                 Ungefähre Höhe
               </label>
-              <select
-                id="height"
-                value={formData.height}
-                onChange={(e) => update('height', e.target.value)}
-                className={inputClass}
-              >
-                <option value="">Bitte wählen</option>
-                {heightOptions.map((o) => (
-                  <option key={o} value={o}>
-                    {o}
-                  </option>
-                ))}
-              </select>
+              <div className="relative">
+                <select
+                  id="height"
+                  value={formData.height}
+                  onChange={(e) => update('height', e.target.value)}
+                  className={selectClass}
+                >
+                  <option value="">Bitte wählen</option>
+                  {heightOptions.map((o) => (
+                    <option key={o} value={o}>
+                      {o}
+                    </option>
+                  ))}
+                </select>
+                <ChevronDown className="pointer-events-none absolute right-3 top-1/2 h-4 w-4 -translate-y-1/2 text-warm-brown" />
+              </div>
             </div>
 
             {/* Installation */}
@@ -356,19 +366,22 @@ export default function QuoteWizard() {
               <label htmlFor="installation" className="mb-1.5 block text-sm font-medium text-charcoal">
                 Montage gewünscht?
               </label>
-              <select
-                id="installation"
-                value={formData.installation}
-                onChange={(e) => update('installation', e.target.value)}
-                className={inputClass}
-              >
-                <option value="">Bitte wählen</option>
-                {installationOptions.map((o) => (
-                  <option key={o} value={o}>
-                    {o}
-                  </option>
-                ))}
-              </select>
+              <div className="relative">
+                <select
+                  id="installation"
+                  value={formData.installation}
+                  onChange={(e) => update('installation', e.target.value)}
+                  className={selectClass}
+                >
+                  <option value="">Bitte wählen</option>
+                  {installationOptions.map((o) => (
+                    <option key={o} value={o}>
+                      {o}
+                    </option>
+                  ))}
+                </select>
+                <ChevronDown className="pointer-events-none absolute right-3 top-1/2 h-4 w-4 -translate-y-1/2 text-warm-brown" />
+              </div>
             </div>
 
             {/* Details */}
@@ -427,19 +440,22 @@ export default function QuoteWizard() {
               <label htmlFor="salutation" className="mb-1.5 block text-sm font-medium text-charcoal">
                 Anrede
               </label>
-              <select
-                id="salutation"
-                value={formData.salutation}
-                onChange={(e) => update('salutation', e.target.value)}
-                className={inputClass}
-              >
-                <option value="">Bitte wählen</option>
-                {salutationOptions.map((o) => (
-                  <option key={o} value={o}>
-                    {o}
-                  </option>
-                ))}
-              </select>
+              <div className="relative">
+                <select
+                  id="salutation"
+                  value={formData.salutation}
+                  onChange={(e) => update('salutation', e.target.value)}
+                  className={selectClass}
+                >
+                  <option value="">Bitte wählen</option>
+                  {salutationOptions.map((o) => (
+                    <option key={o} value={o}>
+                      {o}
+                    </option>
+                  ))}
+                </select>
+                <ChevronDown className="pointer-events-none absolute right-3 top-1/2 h-4 w-4 -translate-y-1/2 text-warm-brown" />
+              </div>
             </div>
 
             {/* Name row */}

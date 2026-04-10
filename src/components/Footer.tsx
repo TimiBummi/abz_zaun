@@ -28,28 +28,6 @@ const rechtlichesLinks = [
 export default function Footer() {
   return (
     <>
-      {/* CTA Banner */}
-      <div className="bg-warm-white">
-        <Container className="py-12 sm:py-16">
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-6 text-center sm:text-left">
-            <div>
-              <h2 className="text-2xl sm:text-3xl font-bold text-charcoal font-heading">
-                Kostenlose Beratung
-              </h2>
-              <p className="mt-2 text-charcoal/60 text-lg">
-                Wir beraten Sie gerne zu Ihrem Zaunprojekt — unverbindlich und kostenfrei.
-              </p>
-            </div>
-            <Link
-              href="/kontakt"
-              className="inline-flex items-center shrink-0 px-8 py-3.5 bg-abz-red hover:bg-abz-red-dark text-white text-lg font-semibold rounded-lg transition-colors"
-            >
-              Jetzt Angebot anfordern
-            </Link>
-          </div>
-        </Container>
-      </div>
-
       {/* Footer */}
       <footer className="bg-charcoal text-warm-gray">
         <Container className="py-12 sm:py-16">

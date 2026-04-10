@@ -250,7 +250,7 @@ export default function MontagePage() {
       {/* ============================================================ */}
       {/* 6. CTA                                                       */}
       {/* ============================================================ */}
-      <Section background="warm">
+      <Section background="stone">
         <Container>
           <AnimateIn>
             <div className="mx-auto max-w-2xl text-center">

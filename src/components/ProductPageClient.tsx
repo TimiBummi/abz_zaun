@@ -1,9 +1,7 @@
 'use client';
 
 import { useState, type ReactNode } from 'react';
-import Link from 'next/link';
-import { Check, ArrowRight } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { Check } from 'lucide-react';
 import Section from './Section';
 import Container from './Container';
 import AnimateIn from './AnimateIn';
@@ -11,6 +9,7 @@ import ProductImage from './ProductImage';
 import Lightbox from './Lightbox';
 import FaqAccordion from './FaqAccordion';
 import SpecTable from './SpecTable';
+import CtaBanner from './CtaBanner';
 
 interface ProductImageData {
   src: string;
@@ -160,30 +159,12 @@ export default function ProductPageClient({
       </Section>
 
       {/* CTA */}
-      <Section background="charcoal">
-        <Container>
-          <AnimateIn>
-            <div className="flex flex-col items-center text-center">
-              <h2 className="font-heading text-2xl font-bold text-white sm:text-3xl">
-                Jetzt Angebot für {title} anfordern
-              </h2>
-              <p className="mt-3 max-w-xl text-white/70 font-body">
-                Wir erstellen Ihnen ein individuelles Angebot — kostenlos und unverbindlich.
-                Kontaktieren Sie uns noch heute.
-              </p>
-              <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.98 }}>
-                <Link
-                  href="/kontakt"
-                  className="mt-8 inline-flex items-center gap-2 rounded-lg bg-abz-red px-8 py-3.5 font-heading font-semibold text-white transition-colors hover:bg-abz-red-dark"
-                >
-                  Angebot anfordern
-                  <ArrowRight className="h-5 w-5" />
-                </Link>
-              </motion.div>
-            </div>
-          </AnimateIn>
-        </Container>
-      </Section>
+      <CtaBanner
+        heading={`Jetzt Angebot für ${title} anfordern`}
+        subtext="Wir erstellen Ihnen ein individuelles Angebot — kostenlos und unverbindlich. Kontaktieren Sie uns noch heute."
+        buttonLabel="Angebot anfordern"
+        buttonHref="/kontakt"
+      />
 
       {/* Lightbox */}
       <Lightbox
