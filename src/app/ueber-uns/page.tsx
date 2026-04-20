@@ -3,6 +3,7 @@ import Section from '@/components/Section';
 import AnimateIn from '@/components/AnimateIn';
 import CtaBanner from '@/components/CtaBanner';
 import JsonLd from '@/components/JsonLd';
+import MapWrapper from '@/components/MapWrapper';
 import { Shield, Award, Heart, Mail, Clock, MapPin } from 'lucide-react';
 
 /* ------------------------------------------------------------------ */
@@ -259,16 +260,9 @@ export default function UeberUnsPage() {
             </div>
             </AnimateIn>
 
-            {/* Google Maps embed */}
+            {/* OpenStreetMap via Leaflet */}
             <div className="overflow-hidden rounded-2xl border border-warm-gray-dark/50 lg:h-auto lg:min-h-[20rem]">
-              <iframe
-                title="ABZ-Zaunsysteme Standort"
-                src="https://maps.google.com/maps?q=Virmondstrasse+137,+47877+Willich&output=embed&z=15"
-                width="100%"
-                height="100%"
-                style={{ border: 0, display: 'block', minHeight: '16rem' }}
-                allowFullScreen
-              />
+              <MapWrapper height="320px" />
             </div>
           </div>
         </Container>

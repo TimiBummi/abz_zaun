@@ -6,6 +6,7 @@ import AnimateIn from '@/components/AnimateIn';
 import CtaBanner from '@/components/CtaBanner';
 import QuoteWizard from '@/components/QuoteWizard';
 import JsonLd from '@/components/JsonLd';
+import MapWrapper from '@/components/MapWrapper';
 import {
   Phone,
   Mail,
@@ -164,24 +165,17 @@ export default function KontaktPage() {
                   </div>
                 </div>
 
-                {/* Google Maps embed */}
+                {/* OpenStreetMap via Leaflet */}
                 <div className="mt-8 overflow-hidden rounded-xl border border-warm-gray-dark/50">
-                  <iframe
-                    title="ABZ-Zaunsysteme Standort"
-                    src="https://maps.google.com/maps?q=Virmondstrasse+137,+47877+Willich&output=embed&z=15"
-                    width="100%"
-                    height="240"
-                    style={{ border: 0, display: 'block' }}
-                    allowFullScreen
-                  />
+                  <MapWrapper height="240px" />
                   <div className="border-t border-warm-gray-dark/50 bg-warm-gray px-3 py-1.5 text-right">
                     <a
-                      href="https://maps.google.com/maps?q=Virmondstrasse+137,+47877+Willich"
+                      href="https://www.openstreetmap.org/?mlat=51.2840&mlon=6.5490#map=15/51.2840/6.5490"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-xs text-warm-brown hover:text-charcoal transition-colors"
                     >
-                      In Google Maps öffnen ↗
+                      Größere Karte anzeigen ↗
                     </a>
                   </div>
                 </div>
