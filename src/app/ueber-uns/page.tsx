@@ -259,11 +259,16 @@ export default function UeberUnsPage() {
             </div>
             </AnimateIn>
 
-            {/* Map placeholder */}
-            <div className="flex h-64 items-center justify-center rounded-2xl bg-warm-gray lg:h-auto lg:min-h-[20rem]">
-              <span className="px-4 text-center text-sm font-medium text-charcoal/20">
-                Karte wird nach Cookie-Zustimmung geladen
-              </span>
+            {/* Google Maps embed */}
+            <div className="overflow-hidden rounded-2xl border border-warm-gray-dark/50 lg:h-auto lg:min-h-[20rem]">
+              <iframe
+                title="ABZ-Zaunsysteme Standort"
+                src="https://maps.google.com/maps?q=Virmondstrasse+137,+47877+Willich&output=embed&z=15"
+                width="100%"
+                height="100%"
+                style={{ border: 0, display: 'block', minHeight: '16rem' }}
+                allowFullScreen
+              />
             </div>
           </div>
         </Container>
