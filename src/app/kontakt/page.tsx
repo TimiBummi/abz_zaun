@@ -158,17 +158,32 @@ export default function KontaktPage() {
                         Öffnungszeiten
                       </p>
                       <p className="font-heading font-semibold text-charcoal">
-                        MO - FR: 9:00 - 17:00
+                        MO – FR: 08:30 – 17:00
                       </p>
                     </div>
                   </div>
                 </div>
 
-                {/* Map placeholder */}
-                <div className="mt-8 flex h-48 items-center justify-center rounded-xl bg-warm-gray text-center">
-                  <p className="px-4 text-sm text-warm-brown">
-                    Karte wird nach Cookie-Zustimmung geladen
-                  </p>
+                {/* OpenStreetMap embed — no cookie consent required */}
+                <div className="mt-8 overflow-hidden rounded-xl border border-warm-gray-dark/50">
+                  <iframe
+                    title="ABZ-Zaunsysteme Standort"
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=6.535,51.277,6.563,51.291&layer=mapnik&marker=51.2840,6.5490"
+                    width="100%"
+                    height="240"
+                    style={{ border: 0, display: 'block' }}
+                    loading="lazy"
+                  />
+                  <div className="border-t border-warm-gray-dark/50 bg-warm-gray px-3 py-1.5 text-right">
+                    <a
+                      href="https://www.openstreetmap.org/?mlat=51.2840&mlon=6.5490#map=15/51.2840/6.5490"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xs text-warm-brown hover:text-charcoal transition-colors"
+                    >
+                      Größere Karte anzeigen ↗
+                    </a>
+                  </div>
                 </div>
               </div>
             </aside>

@@ -18,7 +18,7 @@ export default function CtaBanner({
   secondaryButtonHref,
 }: CtaBannerProps) {
   return (
-    <section className="bg-abz-red-muted py-16">
+    <section className="bg-abz-red py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center text-center gap-6">
           <div>

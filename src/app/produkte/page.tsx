@@ -15,6 +15,8 @@ import {
   Grid3x3,
   Sparkles,
   Zap,
+  Lightbulb,
+  Mail,
   ArrowRight,
 } from 'lucide-react';
 
@@ -41,6 +43,8 @@ const iconMap = {
   Grid3x3,
   Sparkles,
   Zap,
+  Lightbulb,
+  Mail,
 } as const;
 
 const categories = [
@@ -52,6 +56,8 @@ const categories = [
   { slug: 'maschendrahtzaun', title: 'Maschendrahtzaun', shortDescription: 'Die wirtschaftliche Lösung für große Flächen', icon: 'Grid3x3' as const, image: null },
   { slug: 'zierzaun', title: 'Zierzaun', shortDescription: 'Elegante Zäune mit dekorativem Charakter', icon: 'Sparkles' as const, image: '/images/produkte/zierzaun/zierzaun-anthrazit-einfahrt-wohnhaus.jpg' },
   { slug: 'torantriebe', title: 'Torantriebe', shortDescription: 'Komfort durch Automatisierung', icon: 'Zap' as const, image: null },
+  { slug: 'zaunbeleuchtung', title: 'Zaunleuchten Kappa', shortDescription: 'Elegante Solarleuchten für Zaunpfosten', icon: 'Lightbulb' as const, image: '/images/produkte/zaunbeleuchtung/zaunbeleuchtung-solar-alle-farben.jpg' },
+  { slug: 'briefkastenanlagen', title: 'Briefkastenanlagen', shortDescription: 'Passgenau für die Integration in Ihre Zaunanlage', icon: 'Mail' as const, image: '/images/produkte/briefkastenanlagen/briefkasten-zaunanlage.jpg' },
 ];
 
 const breadcrumbSchema = {

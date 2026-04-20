@@ -30,7 +30,7 @@ export default function Header() {
               alt="ABZ-Zaunsysteme GmbH"
               width={433}
               height={312}
-              className="h-11 sm:h-14 w-auto"
+              className="h-14 sm:h-18 w-auto"
               priority
             />
             {/* Text logo (fallback — restore by swapping comments)

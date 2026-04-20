@@ -15,6 +15,7 @@ import {
   Grid3x3,
   Sparkles,
   Zap,
+  Mail,
 } from 'lucide-react';
 
 const iconMap = {
@@ -26,6 +27,7 @@ const iconMap = {
   Grid3x3,
   Sparkles,
   Zap,
+  Mail,
 } as const;
 
 type IconName = keyof typeof iconMap;
@@ -146,7 +148,7 @@ const categories: CategoryData[] = [
     benefits: [
       'Platzsparend — kein Schwenkbereich vor oder hinter dem Tor nötig',
       'Freitragende Konstruktion ohne Bodenschiene möglich — kein Einfrieren, kein Stolpern',
-      'Automatisierbar mit bewährten Ditec-Torantrieben für maximalen Bedienkomfort',
+      'Automatisierbar mit hochwertigen Torantrieben — Ditec-Gebietspartner für maximalen Service',
       'Robuster Stahlrahmen, feuerverzinkt und pulverbeschichtet für dauerhafte Witterungsbeständigkeit',
       'Durchfahrtsbreiten bis ca. 10 m realisierbar — auch für Lkw und Transporter',
       'Individuelle Füllung passend zum Zaunsystem: Doppelstabmatte, Schmuckgitter oder Lamellenfüllung',
@@ -155,7 +157,7 @@ const categories: CategoryData[] = [
     contentBlocks: [
       { heading: 'Schiebetor für die Einfahrt — wann ist es die richtige Wahl?', text: 'Ein Schiebetor empfiehlt sich immer dann, wenn vor oder hinter der Toröffnung kein Platz für aufschwingende Flügel vorhanden ist. An Grundstücken mit Hanglage, direkt an Gehwegen oder bei breiten Einfahrten spielt das Schiebetor seine Stärken voll aus: Es gleitet seitlich entlang des Zauns und benötigt lediglich seitlichen Freiraum in der Breite der Toröffnung. Damit ist ein Schiebetor für die Einfahrt die erste Wahl bei beengten Platzverhältnissen und gleichzeitig eine optisch elegante Lösung. Bei ABZ-Zaunsysteme in Willich beraten wir Sie, ob ein Schiebetor, ein Drehflügeltor oder ein Doppeldrehtor für Ihre Situation am besten geeignet ist.' },
       { heading: 'Freitragendes Schiebetor oder schienengeführt — die Unterschiede', text: 'Bei einem freitragenden Schiebetor wird das Torblatt von einer Tragkonstruktion am Führungspfosten gehalten und schwebt frei über dem Boden. Eine Bodenschiene ist nicht erforderlich, was die Zufahrt absenkerfrei und pflegeleicht hält — ideal bei Schnee, Laub oder unebenem Untergrund. Das schienengeführte Schiebetor dagegen läuft auf einer im Boden eingelassenen Schiene und eignet sich besonders bei sehr breiten Öffnungen oder hohem Torgewicht. Beide Varianten liefern wir maßgefertigt und passend zu Ihrem bestehenden Zaunsystem.' },
-      { heading: 'Automatisches Schiebetor mit Ditec-Antrieb', text: 'Ein Schiebetor mit Antrieb macht das tägliche Ein- und Ausfahren bequem und sicher. ABZ-Zaunsysteme setzt auf die bewährten Torantriebe unseres Partners Ditec, die sich durch Zuverlässigkeit und leisen Lauf auszeichnen. Per Handsender, Schlüsselschalter oder Smart-Home-Integration öffnen und schließen Sie Ihr automatisches Schiebetor komfortabel vom Fahrzeug oder Haus aus. Auch eine Nachrüstung ist bei den meisten bestehenden Schiebetoren problemlos möglich. Unsere Techniker übernehmen Einbau und Einstellung des Antriebs vor Ort.' },
+      { heading: 'Automatisches Schiebetor mit elektrischem Antrieb', text: 'Ein Schiebetor mit Antrieb macht das tägliche Ein- und Ausfahren bequem und sicher. ABZ-Zaunsysteme setzt je nach Torhersteller und Anforderung auf die passenden Torantriebe — für Ditec-Antriebe sind wir exklusiver Gebietspartner. Per Handsender, Schlüsselschalter oder Smart-Home-Integration öffnen und schließen Sie Ihr automatisches Schiebetor komfortabel vom Fahrzeug oder Haus aus. Auch eine Nachrüstung ist bei den meisten bestehenden Schiebetoren problemlos möglich. Unsere Techniker übernehmen Einbau und Einstellung des Antriebs vor Ort.' },
       { heading: 'Material und Oberfläche — Schiebetor in Wunschfarbe', text: 'Unsere Schiebetore bestehen aus einem stabilen Stahlrahmen, der feuerverzinkt und anschließend pulverbeschichtet wird. Diese doppelte Schutzschicht sorgt für langanhaltenden Korrosionsschutz und dauerhaften Farbglanz. Die Füllung des Torblatts wird passend zu Ihrem Zaun gewählt — ob Doppelstabmatte, Schmuckgitter oder Sichtschutzlamellen. Den RAL-Farbton bestimmen Sie selbst: Anthrazitgrau (RAL 7016) und Moosgrün (RAL 6005) sind besonders gefragt, weitere RAL-Töne liefern wir auf Anfrage.' },
       { heading: 'Schiebetor-Montage und Service vom Fachbetrieb', text: 'ABZ-Zaunsysteme GmbH übernimmt die komplette Montage Ihres Schiebetors in der Region Willich-Neersen und am gesamten Niederrhein. Wir setzen das Fundament, montieren die Führungspfosten und installieren Torblatt und Antrieb fachgerecht. Bei automatisierten Schiebetoren kümmern wir uns auch um die elektrische Anbindung und die Einstellung der Sicherheitskontaktleiste. Auch nach der Montage sind wir Ihr Ansprechpartner: regelmäßige Wartung und schneller Service gehören zu unserem Komplettangebot.' },
     ],
@@ -207,7 +209,7 @@ const categories: CategoryData[] = [
     title: 'Drehflügeltore',
     shortDescription: 'Klassische Tore für Einfahrt und Garten',
     description:
-      'Drehflügeltore von ABZ-Zaunsysteme GmbH in Willich-Neersen vereinen klassische Eleganz mit zuverlässiger Funktion. Als bewährte Einfahrtstore öffnen sie sich komfortabel nach innen oder außen und lassen sich auf Wunsch mit einem Ditec-Antrieb vollständig automatisieren. Ob Einzeldrehtor für den Garteneingang oder Doppeldrehtor für die Zufahrt — wir beraten Sie persönlich und liefern Ihr Tor inklusive Montage aus einer Hand.',
+      'Drehflügeltore von ABZ-Zaunsysteme GmbH in Willich-Neersen vereinen klassische Eleganz mit zuverlässiger Funktion. Als bewährte Einfahrtstore öffnen sie sich komfortabel nach innen oder außen und lassen sich auf Wunsch vollständig automatisieren — für Ditec-Antriebe sind wir exklusiver Gebietspartner. Ob Einzeldrehtor für den Garteneingang oder Doppeldrehtor für die Zufahrt — wir beraten Sie persönlich und liefern Ihr Tor inklusive Montage aus einer Hand.',
     icon: 'DoorOpen',
     images: [
       { src: '/images/produkte/drehfluegeltore/drehfluegeltor-doppel-anthrazit-lamellen-wohnhaus.jpg', alt: 'Doppeldrehtor in Anthrazitgrau mit Lamellenoptik vor Wohnhaus' },
@@ -220,7 +222,7 @@ const categories: CategoryData[] = [
       'Klassisches Tordesign für repräsentative Einfahrten und Gartenzugänge',
       'Feuerverzinkter Stahl mit optionaler Pulverbeschichtung — langlebig und witterungsbeständig',
       'Erhältlich als Einzeldrehtor (bis ca. 1,50 m) oder Doppeldrehtor (bis ca. 6,00 m Durchfahrtsbreite)',
-      'Automatisierbar mit Ditec-Drehtorantrieben für maximalen Komfort',
+      'Automatisierbar mit elektrischen Torantrieben — Ditec-Gebietspartner für maximalen Service',
       'Kombinierbar mit Doppelstabmattenzaun und allen gängigen ABZ-Zaunsystemen',
       'Individuelle Farben nach RAL — Anthrazit (RAL 7016) besonders beliebt',
       'Komplettservice von der Beratung über die Planung bis zur fertigen Montage am Niederrhein',
@@ -830,13 +832,13 @@ const categories: CategoryData[] = [
     title: 'Torantriebe',
     shortDescription: 'Komfort durch Automatisierung',
     description:
-      'Torantriebe von unserem Partner Ditec sorgen für komfortables, automatisches Öffnen und Schließen Ihrer Tore — per Fernbedienung, Schlüsselschalter oder Smartphone-App. ABZ-Zaunsysteme GmbH in Willich-Neersen plant, liefert und montiert Torantriebe für Schiebetore und Drehflügeltore bei Privat- und Gewerbekunden in der gesamten Region Niederrhein.',
+      'ABZ-Zaunsysteme GmbH in Willich-Neersen plant, liefert und montiert Torantriebe führender Hersteller für Schiebetore und Drehflügeltore bei Privat- und Gewerbekunden in der gesamten Region Niederrhein. Für Ditec-Antriebe sind wir exklusiver Gebietspartner — für andere Torhersteller setzen wir die jeweils empfohlenen oder mitgelieferten Antriebe fachgerecht um.',
     icon: 'Zap',
     images: [],
     contentBlocks: [
       {
-        heading: 'Torantriebe von Ditec — bewährte Qualität für Schiebetor und Drehflügeltor',
-        text: 'Ditec ist einer der führenden europäischen Hersteller für automatische Torantriebe und steht für zuverlässige Technik, lange Lebensdauer und einfache Bedienung. Bei ABZ-Zaunsysteme GmbH sind wir autorisierter Partner und bieten das vollständige Ditec-Sortiment an — von kompakten Antrieben für private Drehtore bis zu leistungsstarken Systemen für schwere Schiebetore auf Gewerbegeländen. Alle Antriebe verfügen über eine Hinderniserkennung und eine manuelle Notentriegelung für den Stromausfall-Fall.',
+        heading: 'Torantriebe führender Hersteller — Ditec mit exklusivem Gebietsschutz',
+        text: 'Wir arbeiten mit den führenden Torantrieb-Herstellern zusammen — denn manche Torhersteller schreiben spezifische Antriebe vor oder empfehlen diese für ihr System. Für Ditec-Antriebe sind wir exklusiver Gebietspartner in der Region, was Ihnen optimalen Service und direkte Ersatzteilversorgung garantiert. Ditec steht für zuverlässige europäische Technik, lange Lebensdauer und einfache Bedienung — von kompakten Antrieben für private Drehtore bis zu leistungsstarken Systemen für schwere Schiebetore auf Gewerbegeländen.',
       },
       {
         heading: 'Schiebetorantrieb — reibungsloser Betrieb auch bei großen Toren',
@@ -853,7 +855,7 @@ const categories: CategoryData[] = [
     ],
     benefits: [
       'Komfortables Öffnen per Fernbedienung oder Smartphone-App',
-      'Bewährte Ditec-Qualität — autorisierter Fachpartner bei ABZ-Zaunsysteme',
+      'Ditec-Gebietspartner — optimaler Service und direkte Ersatzteilversorgung',
       'Für Schiebetore und Drehflügeltore aller Größen geeignet',
       'Sichere Hinderniserkennung und Abschaltsicherheit',
       'Manuelle Notentriegelung bei Stromausfall immer möglich',
@@ -861,7 +863,7 @@ const categories: CategoryData[] = [
       'Planung, Lieferung und Montage aus einer Hand',
     ],
     specs: [
-      { label: 'Hersteller', value: 'Ditec (autorisierter Fachpartner)' },
+      { label: 'Hersteller', value: 'Ditec (exklusiver Gebietspartner) sowie weitere führende Hersteller' },
       { label: 'Tortypen', value: 'Schiebetore, Drehflügeltore (ein- und zweiflügelig)' },
       { label: 'Max. Torgewicht', value: 'bis 2.000 kg (je nach Modell)' },
       { label: 'Steuerung', value: 'Fernbedienung, Schlüsselschalter, Smartphone-App, GSM-Modul' },
@@ -1041,10 +1043,10 @@ const categories: CategoryData[] = [
   },
   {
     slug: 'zaunbeleuchtung',
-    title: 'Zaunbeleuchtung',
-    shortDescription: 'Solar-Pfostenbeleuchtung für Zaun und Einfahrt',
+    title: 'Zaunleuchten',
+    shortDescription: 'Solar-Pfostenleuchten Modell Kappa für Zaun und Einfahrt',
     description:
-      'Zaunbeleuchtung von ABZ-Zaunsysteme GmbH in Willich-Neersen setzt Ihren Zaun, Ihre Einfahrt und Ihren Garten stimmungsvoll in Szene — ohne Stromanschluss und ohne laufende Energiekosten. Unsere Solar-Pfostenleuchten laden sich tagsüber selbst auf und leuchten automatisch in der Nacht. Erhältlich in verschiedenen Farben und Ausführungen: für Frontgitterzäune, Doppelstabmattenzäune und alle gängigen Pfostengrößen. Von unserem Partner Paulmann.',
+      'Zaunleuchten von ABZ-Zaunsysteme GmbH in Willich-Neersen setzen Ihren Zaun, Ihre Einfahrt und Ihren Garten stimmungsvoll in Szene — ohne Stromanschluss und ohne laufende Energiekosten. Unser Highlight: die Solar-Pfostenleuchte Modell Kappa, die sich tagsüber selbst auflädt und automatisch in der Nacht leuchtet. Erhältlich in verschiedenen Farben und Ausführungen für Frontgitterzäune, Doppelstabmattenzäune und alle gängigen Pfostengrößen.',
     icon: 'Sparkles',
     images: [
       { src: '/images/produkte/zaunbeleuchtung/zaunbeleuchtung-solar-alle-farben.jpg', alt: 'Solar-Pfostenbeleuchtung in allen verfügbaren Farben — Übersicht' },
@@ -1060,8 +1062,8 @@ const categories: CategoryData[] = [
     ],
     contentBlocks: [
       {
-        heading: 'Solar-Zaunbeleuchtung — Licht ohne Stromanschluss',
-        text: 'Solar-Pfostenleuchten für Zäune sind die unkomplizierte Lösung für dekoratives Licht am Zaun, auf der Einfahrt oder im Garten — ganz ohne Erdkabel, Elektriker und Stromkosten. Die integrierten Solarpanels laden die Akkus tagsüber automatisch auf; sobald es dunkel wird, schalten sich die Leuchten selbst ein. Bei ABZ-Zaunsysteme GmbH in Willich-Neersen bieten wir Solar-Pfostenleuchten von Paulmann an — einem der führenden deutschen Leuchtenhersteller für hochwertige Außenbeleuchtung.',
+        heading: 'Zaunleuchten Modell Kappa — Licht ohne Stromanschluss',
+        text: 'Die Solar-Pfostenleuchte Modell Kappa ist die unkomplizierte Lösung für dekoratives Licht am Zaun, auf der Einfahrt oder im Garten — ganz ohne Erdkabel, Elektriker und Stromkosten. Die integrierten Solarpanels laden die Akkus tagsüber automatisch auf; sobald es dunkel wird, schaltet sich die Leuchte selbst ein. Bei ABZ-Zaunsysteme GmbH in Willich-Neersen führen wir das Modell Kappa in verschiedenen Farben und Ausführungen.',
       },
       {
         heading: 'Für alle gängigen Zaunpfosten — einfach aufstecken',
@@ -1078,7 +1080,7 @@ const categories: CategoryData[] = [
       'Passt auf alle gängigen Zaunpfosten — Montage ohne Werkzeug',
       'Ideal zum Nachrüsten an bestehenden Zaunanlagen',
       'Erhältlich in Weiß, Rot und Rot-Weiß sowie warmweiß/kaltweiß LED',
-      'Hochwertige Paulmann-Qualität — erprobt für den Außeneinsatz',
+      'Modell Kappa — erprobt für den dauerhaften Außeneinsatz',
       'Dekoratives Licht für Zaun, Einfahrt und Garten',
     ],
     specs: [
@@ -1116,6 +1118,51 @@ const categories: CategoryData[] = [
         question: 'Welche Farben sind bei der Solar-Pfostenbeleuchtung erhältlich?',
         answer:
           'Unsere Leuchten sind in Weiß, Rot und Rot-Weiß erhältlich. Weiß eignet sich für neutrales, helles Licht an Einfahrten und Hauseingängen; Rot setzt dekorative Farbakzente im Garten; Rot-Weiß kombiniert beides für einen lebhaften Effekt. ABZ-Zaunsysteme berät Sie gerne zur passenden Auswahl.',
+      },
+    ],
+  },
+  {
+    slug: 'briefkastenanlagen',
+    title: 'Briefkastenanlagen',
+    shortDescription: 'Briefkästen und Multifunktionsboxen für Zaunanlagen',
+    description:
+      'Briefkastenanlagen von ABZ-Zaunsysteme GmbH in Willich-Neersen — passgenau integriert in Ihre Zaunanlage. Ob freistehende Briefkastensäule, Wandmontage oder direkte Integration in den Zaun: Wir beraten Sie zur passenden Lösung und liefern alles aus einer Hand. Weitere Produktinformationen folgen in Kürze — sprechen Sie uns gerne direkt an.',
+    icon: 'Mail',
+    images: [
+      { src: '/images/produkte/briefkastenanlagen/briefkasten-zaunanlage.jpg', alt: 'Briefkasten integriert in Zaunanlage' },
+      { src: '/images/produkte/briefkastenanlagen/briefkastensaeule.jpg', alt: 'Freistehende Briefkastensäule' },
+      { src: '/images/produkte/briefkastenanlagen/briefkasten-montage.jpg', alt: 'Briefkasten Montage' },
+    ],
+    contentBlocks: [
+      {
+        heading: 'Briefkastenanlagen — passgenau für Ihren Zaun',
+        text: 'Eine Briefkastenanlage ist mehr als nur ein Postempfänger — sie ist das erste, was Besucher und Lieferanten an Ihrem Grundstück wahrnehmen. ABZ-Zaunsysteme GmbH bietet Briefkastenlösungen an, die sich nahtlos in Ihre Zaunanlage integrieren: als Teil des Einfahrtstors, als freistehende Säule oder zur Wandmontage. So entsteht ein harmonisches Gesamtbild vom Zaun bis zum Briefkasten — alles aus einer Hand, alles aufeinander abgestimmt.',
+      },
+      {
+        heading: 'Individuelle Beratung',
+        text: 'Wir arbeiten derzeit daran, unser Briefkastenanlagen-Sortiment vollständig auf dieser Seite zu präsentieren. Sprechen Sie uns in der Zwischenzeit gerne direkt an — wir beraten Sie persönlich zu allen verfügbaren Modellen, Größen und Integrationsmöglichkeiten. Unser Team in Willich-Neersen steht Ihnen MO–FR von 08:30–17:00 Uhr zur Verfügung.',
+      },
+    ],
+    benefits: [
+      'Nahtlose Integration in bestehende oder neue Zaunanlage',
+      'Freistehend, wandmontiert oder in Einfahrtstor integrierbar',
+      'Passende Farben und Materialien zum Zaundesign erhältlich',
+      'Persönliche Beratung — Termin unter +49 21 56 774 50 50',
+    ],
+    specs: [
+      { label: 'Ausführungen', value: 'Freistehend, Wandmontage, Zaunintegration' },
+      { label: 'Beratung', value: 'MO–FR 08:30–17:00 Uhr in Willich-Neersen' },
+    ],
+    faqs: [
+      {
+        question: 'Kann ein Briefkasten direkt in mein Einfahrtstor integriert werden?',
+        answer:
+          'Ja, das ist möglich. ABZ-Zaunsysteme GmbH plant und fertigt Einfahrtstore, die Briefkästen oder Multifunktionsboxen direkt integrieren können. Sprechen Sie uns an — wir beraten Sie zu den Möglichkeiten und passenden Lösungen für Ihr Grundstück.',
+      },
+      {
+        question: 'Welche Briefkasten-Modelle sind erhältlich?',
+        answer:
+          'Unser Sortiment wird derzeit auf dieser Seite ergänzt. Für eine aktuelle Übersicht aller verfügbaren Modelle kontaktieren Sie uns bitte direkt unter +49 21 56 774 50 50 oder per E-Mail an info@abz-zaun.de.',
       },
     ],
   },

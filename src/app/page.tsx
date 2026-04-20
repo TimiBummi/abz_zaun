@@ -6,6 +6,7 @@ import Container from '@/components/Container';
 import Section from '@/components/Section';
 import CtaBanner from '@/components/CtaBanner';
 import JsonLd from '@/components/JsonLd';
+import HeroSlider from '@/components/HeroSlider';
 import { motion } from 'framer-motion';
 import {
   Award,
@@ -19,6 +20,9 @@ import {
   Truck,
   Globe,
   Package,
+  Warehouse,
+  Wrench,
+  PlayCircle,
 } from 'lucide-react';
 
 /* ------------------------------------------------------------------ */
@@ -73,6 +77,18 @@ const productCategories = [
     slug: 'torantriebe',
     description: 'Komfort per Knopfdruck — automatische Antriebe für alle Torarten.',
     image: null,
+  },
+  {
+    name: 'Zaunleuchten Kappa',
+    slug: 'zaunbeleuchtung',
+    description: 'Elegante Solarleuchten für Zaunpfosten — stimmungsvoller Lichtakzent für Ihr Grundstück.',
+    image: '/images/produkte/zaunbeleuchtung/zaunbeleuchtung-solar-alle-farben.jpg',
+  },
+  {
+    name: 'Briefkastenanlagen',
+    slug: 'briefkastenanlagen',
+    description: 'Briefkästen und Multifunktionsboxen — passgenau für die Integration in Ihre Zaunanlage.',
+    image: '/images/produkte/briefkastenanlagen/briefkasten-zaunanlage.jpg',
   },
 ];
 
@@ -223,17 +239,14 @@ export default function Home() {
           </motion.div>
         </div>
 
-        {/* Right Side: Image with angled clip */}
+        {/* Right Side: Image Slider with angled clip */}
         <motion.div
           className="min-h-[300px] w-full bg-warm-gray md:min-h-full md:w-2/5"
           initial={{ clipPath: 'polygon(100% 0, 100% 0, 100% 100%, 100% 100%)' }}
           animate={{ clipPath: 'polygon(15% 0, 100% 0, 100% 100%, 0% 100%)' }}
           transition={{ duration: 1.2, ease: 'circOut' }}
         >
-          {/* Placeholder — replace with actual hero image */}
-          <div className="flex h-full items-center justify-center bg-warm-gray-dark/40">
-            <span className="text-7xl font-bold text-charcoal/5 font-heading">ABZ</span>
-          </div>
+          <HeroSlider />
         </motion.div>
       </section>
 
@@ -242,25 +255,28 @@ export default function Home() {
       {/* ============================================================ */}
       <section className="border-y border-warm-gray-dark/50 bg-white py-10">
         <Container>
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-3">
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {[
               { icon: Award, label: '20+ Jahre', text: 'Erfahrung im Zaunbau' },
-              { icon: CheckCircle, label: '1.000+', text: 'Realisierte Projekte' },
-              { icon: HeadphonesIcon, label: 'Kostenlose', text: 'Beratung vor Ort' },
+              { icon: Warehouse, label: 'Lager', text: 'Großes Warensortiment sofort verfügbar' },
+              { icon: Package, label: 'Vertrieb & Montage', text: 'Kauf, Lieferung oder Abholung — auch ohne Montage' },
+              { icon: Wrench, label: 'Wartungsverträge', text: 'Service für elektrische Toranlagen' },
+              { icon: MapPin, label: 'Musterausstellung', text: 'Vor Ort in Willich-Neersen' },
+              { icon: HeadphonesIcon, label: 'Kostenlose Beratung', text: 'Persönlich & unverbindlich' },
             ].map(({ icon: Icon, label, text }, i) => (
               <motion.div
                 key={label}
                 initial={{ opacity: 0, y: 15 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: i * 0.1 }}
-                className="flex items-center justify-center gap-4 text-center sm:text-left"
+                transition={{ duration: 0.4, delay: i * 0.08 }}
+                className="flex items-center gap-4"
               >
                 <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-abz-red/10 text-abz-red">
                   <Icon className="h-5 w-5" />
                 </div>
                 <div>
-                  <p className="font-heading text-xl font-bold text-charcoal">{label}</p>
+                  <p className="font-heading text-base font-bold text-charcoal">{label}</p>
                   <p className="text-sm text-body-text">{text}</p>
                 </div>
               </motion.div>
@@ -347,6 +363,16 @@ export default function Home() {
               </motion.div>
             ))}
           </div>
+
+          <div className="mt-10 text-center">
+            <Link
+              href="/produkte"
+              className="inline-flex items-center gap-2 font-heading text-base font-semibold text-abz-red transition-colors hover:text-abz-red-dark"
+            >
+              Alle Produkte ansehen
+              <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
         </Container>
       </Section>
 
@@ -422,7 +448,62 @@ export default function Home() {
       />
 
       {/* ============================================================ */}
-      {/* 5. REFERENCE PREVIEW                                         */}
+      {/* 5. VIDEO SECTION — BAUVORHABEN                               */}
+      {/* ============================================================ */}
+      <Section background="warm">
+        <Container>
+          <div className="mx-auto mb-12 max-w-2xl text-center">
+            <motion.h2
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="font-heading text-3xl font-bold text-charcoal sm:text-4xl"
+            >
+              Einblicke in unsere Projekte
+            </motion.h2>
+            <motion.p
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+              className="mt-4 text-lg text-body-text"
+            >
+              Sehen Sie, wie wir arbeiten — kurze Clips direkt von unseren Baustellen.
+            </motion.p>
+          </div>
+
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              { title: 'Doppelstabmattenzaun — Wohnanlage Willich' },
+              { title: 'Schiebetor mit Automatikantrieb' },
+              { title: 'Gabionenwand als Sichtschutz' },
+            ].map(({ title }, i) => (
+              <motion.div
+                key={title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: i * 0.1 }}
+                className="overflow-hidden rounded-2xl border border-warm-gray-dark/50 bg-white"
+              >
+                {/* Placeholder video area */}
+                <div className="flex h-48 flex-col items-center justify-center gap-3 bg-charcoal/5">
+                  <PlayCircle className="h-12 w-12 text-charcoal/20" />
+                  <span className="rounded-full bg-warm-brown/15 px-3 py-1 text-xs font-medium text-warm-brown">
+                    Video folgt
+                  </span>
+                </div>
+                <div className="p-4">
+                  <p className="font-heading text-sm font-semibold text-charcoal">{title}</p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </Container>
+      </Section>
+
+      {/* ============================================================ */}
+      {/* 6. REFERENCE PREVIEW                                         */}
       {/* ============================================================ */}
       <Section background="white">
         <Container>
