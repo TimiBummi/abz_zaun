@@ -303,7 +303,7 @@ const categories: CategoryData[] = [
       { heading: 'Sichtschutz Sigma — Premium-Qualität mit beidseitigem UV-Schutz', text: 'Sigma ist unsere hochwertigste Sichtschutzlösung für alle, die Wert auf maximale Langlebigkeit legen. Gefertigt aus stabilem PVC und beidseitig UV-schutzlackiert, behält dieser Sichtschutz auch an besonders sonnigen Standorten über viele Jahre seine Farbintensität. In den zeitlosen Farben Anthrazitgrau, Moosgrün und Silbergrau erhältlich, fügt sich Sigma harmonisch in jede Gartengestaltung ein. Die beidseitige UV-Beschichtung macht den entscheidenden Unterschied: Auch die Innenseite bleibt farbecht und gepflegt — ein Qualitätsmerkmal, das unsere Kunden in der Region besonders schätzen.' },
       { heading: 'Sichtschutz Delta — Licht und Privatsphäre vereint', text: 'Der Sichtschutz Delta verbindet auf innovative Weise blickdichten Schutz mit Lichtdurchlässigkeit. Die transparente Struktur lässt Tageslicht hindurch und schafft eine helle, freundliche Atmosphäre, ohne dabei an Privatsphäre einzubüßen. Erhältlich in Anthrazitgrau-transparent, Moosgrün-transparent und Weiß-transparent, ist Delta beidseitig UV-schutzlackiert und damit ideal für moderne Gartengestaltungen. Besonders beliebt ist Delta bei Grundstücken, die an schattige Bereiche grenzen — hier bleibt der Garten trotz Sichtschutz hell und einladend.' },
       { heading: 'Sichtschutz Gamma — Hartkunststoff-Streifen einzeln einfädeln', text: 'Die Sichtschutzstreifen Gamma und Gamma Light bestehen aus robustem Hart-PVC und werden einzeln in den Doppelstabmattenzaun eingefädelt. Mit einer Länge von 2,55 m und einer Höhe von 19 cm passen sie exakt in gängige Zaunmatten. Erhältlich in Fenstergrau, Anthrazit, Moosgrün und Weiß, sind diese Streifen UV- und witterungsbeständig. Gamma eignet sich besonders, wenn Sie nur einzelne Zaunfelder blickdicht gestalten möchten — ideal für eine schnelle, flexible Nachrüstung ohne großen Aufwand.' },
-      { heading: 'Sichtschutz Montage — einfach selbst gemacht', text: 'Sichtschutzstreifen einfädeln ist unkompliziert und auch von einer Person durchführbar. Die Rollen werden einfach durch die Doppelstabmatten gefädelt und mit Klemmschienen in Anthrazitgrau, Moosgrün oder Transparent sicher fixiert. Unsere spezielle Montagehilfe erleichtert das Einfädeln zusätzlich und sorgt für ein sauberes Ergebnis — auch bei der Nachrüstung bestehender Zäune. Bei Fragen beraten wir Sie gerne persönlich in unserem Fachhandel in Willich-Neersen oder telefonisch unter +49 (0)2156 774 50 50.' },
+      { heading: 'Sichtschutz Montage — einfach selbst gemacht', text: 'Sichtschutzstreifen einfädeln ist unkompliziert und auch von einer Person durchführbar. Die Rollen werden einfach durch die Doppelstabmatten gefädelt und mit Klemmschienen sicher fixiert — Klemmleisten sind als passendes Zubehör für die Systeme Delta und Sigma erhältlich. Für ein noch schnelleres Ergebnis empfehlen wir unseren selbst entwickelten Rollenhalter: Er hält die schwere Rolle beim Einfädeln stabil und ist bei ABZ-Zaunsysteme käuflich zu erwerben oder leihweise erhältlich. Bei Fragen beraten wir Sie gerne persönlich in unserem Fachhandel in Willich-Neersen oder telefonisch unter +49 (0)2156 774 50 50.' },
     ],
     specs: [
       { label: 'Alpha — Material', value: 'PES/PVC-Verbundmaterial, einseitig UV-schutzlackiert' },
@@ -444,7 +444,10 @@ const categories: CategoryData[] = [
     description:
       'Der Maschendrahtzaun ist der bewährte Klassiker unter den Zaunlösungen — flexibel, kostengünstig und vielseitig einsetzbar. ABZ-Zaunsysteme GmbH in Willich-Neersen bietet hochwertigen Maschendraht in verzinkter und kunststoffbeschichteter Ausführung für private Gärten, Tiergehege und gewerbliche Grundstücke. Ob als grüner Maschendrahtzaun im Garten oder als schlichte Grundstücksbegrenzung: Kein anderer Zaun verbindet Wirtschaftlichkeit und Funktionalität so überzeugend. Unsere Fachberater am Niederrhein beraten Sie persönlich — von der Planung bis zur fertigen Montage.',
     icon: 'Grid3x3',
-    images: [],
+    images: [
+      { src: '/images/produkte/maschendrahtzaun/maschendrahtzaun-detail-anthrazit.jpg', alt: 'Maschendrahtzaun anthrazitgrau — Detailansicht Geflecht und Pfosten' },
+      { src: '/images/produkte/maschendrahtzaun/maschendrahtzaun-anlage.jpg', alt: 'Maschendrahtzaun anthrazitgrau als langer Grundstückszaun an Gewerbefläche' },
+    ],
     contentBlocks: [
       {
         heading: 'Maschendrahtzaun — der vielseitige Allrounder für Garten und Grundstück',
@@ -1059,6 +1062,11 @@ const categories: CategoryData[] = [
       { src: '/images/produkte/zaunbeleuchtung/zaunbeleuchtung-anlage.jpg', alt: 'Beleuchtete Zaunanlage im Abendlicht' },
       { src: '/images/produkte/zaunbeleuchtung/zaunbeleuchtung-solar-rot-2.jpg', alt: 'Solar-Pfostenleuchte Rot — Detailansicht' },
       { src: '/images/produkte/zaunbeleuchtung/zaunbeleuchtung-solar-weiss-2.jpg', alt: 'Solar-Pfostenleuchte Weiß — Detailansicht' },
+      { src: '/images/produkte/zaunbeleuchtung/zaunbeleuchtung-kappa-alle-farben-collage.jpg', alt: 'Solar-Pfostenleuchte Kappa in allen Farben — Blau, Grün, Orange, Warmweiß, Rot' },
+      { src: '/images/produkte/zaunbeleuchtung/zaunbeleuchtung-kappa-alle-farben-collage-2.jpg', alt: 'Kappa Zaunleuchten Farbübersicht — Orange, Blau, Warmweiß, Grün, Rot' },
+      { src: '/images/produkte/zaunbeleuchtung/zaunbeleuchtung-zaun-nacht-atmosphaere.jpg', alt: 'Beleuchteter Frontgitterzaun in der Abenddämmerung mit mehreren Kappa-Leuchten' },
+      { src: '/images/produkte/zaunbeleuchtung/zaunbeleuchtung-zaun-nacht-strasse.jpg', alt: 'Zaunanlage nachts beleuchtet — Kappa Solar-Pfostenleuchten an langer Zaunstrecke' },
+      { src: '/images/produkte/zaunbeleuchtung/zaunbeleuchtung-kappa-detail-nacht.jpg', alt: 'Kappa Zaunleuchte Detailansicht — weißes LED-Licht in der Nacht' },
     ],
     contentBlocks: [
       {
@@ -1071,7 +1079,7 @@ const categories: CategoryData[] = [
       },
       {
         heading: 'Farben und Ausführungen — von dezent bis bunt',
-        text: 'Die Solar-Pfostenleuchten sind in verschiedenen Farben erhältlich: klassisches Weiß für neutrales Licht, dekoratives Rot für auffällige Akzente sowie zweifarbige Varianten (Rot-Weiß). Zusätzlich gibt es Modelle mit warmweißem LED-Licht für eine gemütliche Atmosphäre und kaltweißem Licht für mehr Helligkeit. Die Gehäuse sind aus witterungsbeständigem Material gefertigt und für den dauerhaften Außeneinsatz ausgelegt. ABZ-Zaunsysteme berät Sie zur passenden Auswahl für Ihren Garten und Zaun.',
+        text: 'Die Solar-Pfostenleuchten sind in verschiedenen Farben erhältlich: Warmweiß für gemütliches, neutrales Licht sowie dekoratives Rot, Blau, Grün und Orange für auffällige Farbakzente und atmosphärische Stimmung im Garten. Die Gehäuse sind aus witterungsbeständigem Material gefertigt und für den dauerhaften Außeneinsatz ausgelegt. ABZ-Zaunsysteme berät Sie zur passenden Auswahl für Ihren Garten und Zaun.',
       },
     ],
     benefits: [
@@ -1079,7 +1087,7 @@ const categories: CategoryData[] = [
       'Automatisches Ein- und Ausschalten bei Dunkelheit',
       'Passt auf alle gängigen Zaunpfosten — Montage ohne Werkzeug',
       'Ideal zum Nachrüsten an bestehenden Zaunanlagen',
-      'Erhältlich in Weiß, Rot und Rot-Weiß sowie warmweiß/kaltweiß LED',
+      'Erhältlich in Warmweiß, Rot, Blau, Grün und Orange',
       'Modell Kappa — erprobt für den dauerhaften Außeneinsatz',
       'Dekoratives Licht für Zaun, Einfahrt und Garten',
     ],
@@ -1089,7 +1097,7 @@ const categories: CategoryData[] = [
       { label: 'Lichtquelle', value: 'LED (warmweiß / kaltweiß)' },
       { label: 'Energieversorgung', value: 'Integriertes Solarpanel + Akku' },
       { label: 'Steuerung', value: 'Automatisch (Dämmerungssensor)' },
-      { label: 'Farben', value: 'Weiß, Rot, Rot-Weiß' },
+      { label: 'Farben', value: 'Warmweiß, Rot, Blau, Grün, Orange' },
       { label: 'Montage', value: 'Aufstecken auf Zaunpfosten (ohne Werkzeug)' },
       { label: 'Einsatz', value: 'Außenbereich, witterungsbeständig' },
     ],
@@ -1102,12 +1110,12 @@ const categories: CategoryData[] = [
       {
         question: 'Auf welche Zaunpfosten passen die Leuchten?',
         answer:
-          'Unsere Leuchten sind für die gängigen Pfostendurchmesser von Doppelstabmattenzäunen und Frontgitterzäunen ausgelegt. Sie werden einfach aufgesteckt — ohne Bohren oder Schrauben. Sprechen Sie uns an, wenn Sie unsicher sind, ob Ihre Pfostengröße passt.',
+          'Unsere Leuchten sind für alle gängigen 60×40 mm Pfostendurchmesser von Doppelstabmattenzäunen und Frontgitterzäunen ausgelegt. Sie werden einfach aufgesteckt — ohne Bohren oder Schrauben. Sprechen Sie uns an, wenn Sie unsicher sind, ob Ihre Pfostengröße passt.',
       },
       {
         question: 'Wie lange leuchten die Solar-Pfostenleuchten pro Nacht?',
         answer:
-          'Bei voller Ladung (ca. 8 Sonnenstunden) leuchten die Modelle typischerweise 6–10 Stunden. Im Winter oder bei bewölktem Wetter kann die Leuchtdauer kürzer sein. Die Leuchten schalten sich bei Dämmerung automatisch ein und gehen aus, wenn die Kapazität erschöpft ist oder es wieder hell wird.',
+          'Bei voller Ladung (ca. 8 Sonnenstunden) leuchten die Modelle mindestens 14 Stunden. Im Winter oder bei bewölktem Wetter ist die Leuchtdauer deutlich eingeschränkt. Die Leuchten schalten sich bei Dämmerung automatisch ein und gehen aus, wenn die Kapazität erschöpft ist oder es wieder hell wird.',
       },
       {
         question: 'Kann ich die Zaunbeleuchtung an bestehenden Zäunen nachrüsten?',
@@ -1117,7 +1125,7 @@ const categories: CategoryData[] = [
       {
         question: 'Welche Farben sind bei der Solar-Pfostenbeleuchtung erhältlich?',
         answer:
-          'Unsere Leuchten sind in Weiß, Rot und Rot-Weiß erhältlich. Weiß eignet sich für neutrales, helles Licht an Einfahrten und Hauseingängen; Rot setzt dekorative Farbakzente im Garten; Rot-Weiß kombiniert beides für einen lebhaften Effekt. ABZ-Zaunsysteme berät Sie gerne zur passenden Auswahl.',
+          'Unsere Leuchten sind in Warmweiß, Rot, Blau, Grün und Orange erhältlich. Warmweiß eignet sich für neutrales, helles Licht an Einfahrten und Hauseingängen; Rot, Blau, Grün und Orange setzen dekorative Farbakzente im Garten und schaffen entsprechende Atmosphäre. ABZ-Zaunsysteme berät Sie gerne zur passenden Auswahl.',
       },
     ],
   },
@@ -1132,6 +1140,8 @@ const categories: CategoryData[] = [
       { src: '/images/produkte/briefkastenanlagen/briefkasten-zaunanlage.jpg', alt: 'Briefkasten integriert in Zaunanlage' },
       { src: '/images/produkte/briefkastenanlagen/briefkastensaeule.jpg', alt: 'Freistehende Briefkastensäule' },
       { src: '/images/produkte/briefkastenanlagen/briefkasten-montage.jpg', alt: 'Briefkasten Montage' },
+      { src: '/images/produkte/briefkastenanlagen/multifunktionsbox-saule.jpg', alt: 'Multifunktionsbox-Säule mit Video-Gegensprechanlage, Briefkasten und Paketfach, integriert in Alu-Dichtzaun anthrazitgrau' },
+      { src: '/images/produkte/briefkastenanlagen/multifunktionsbox-saule-2.jpg', alt: 'Integrierte Briefkastensäule in Alu-Dichtzaun anthrazitgrau mit Eingangstor' },
     ],
     contentBlocks: [
       {
@@ -1139,8 +1149,12 @@ const categories: CategoryData[] = [
         text: 'Eine Briefkastenanlage ist mehr als nur ein Postempfänger — sie ist das erste, was Besucher und Lieferanten an Ihrem Grundstück wahrnehmen. ABZ-Zaunsysteme GmbH bietet Briefkastenlösungen an, die sich nahtlos in Ihre Zaunanlage integrieren: als Teil des Einfahrtstors, als freistehende Säule oder zur Wandmontage. So entsteht ein harmonisches Gesamtbild vom Zaun bis zum Briefkasten — alles aus einer Hand, alles aufeinander abgestimmt.',
       },
       {
+        heading: 'Multifunktionsbox — Briefkasten, Paketfach und Gegensprechanlage in einer Säule',
+        text: 'Die Multifunktionsbox ist unsere Premium-Lösung für moderne Grundstückseingänge: Eine freistehende Säule in Anthrazitgrau vereint Briefkasteneinwurf, Paketfach, Video-Gegensprechanlage und Hausnummer — alles passgenau in Ihre Alu-Dichtzaun-Anlage integriert. Das Ergebnis ist ein cleaner, hochwertiger Eingang ohne Kabelchaos und ohne Kompromisse beim Design. Erhältlich als Kombination mit unseren Alu-Dichtzäunen und Toren in allen Standardfarben.',
+      },
+      {
         heading: 'Individuelle Beratung',
-        text: 'Wir arbeiten derzeit daran, unser Briefkastenanlagen-Sortiment vollständig auf dieser Seite zu präsentieren. Sprechen Sie uns in der Zwischenzeit gerne direkt an — wir beraten Sie persönlich zu allen verfügbaren Modellen, Größen und Integrationsmöglichkeiten. Unser Team in Willich-Neersen steht Ihnen MO–FR von 08:30–17:00 Uhr zur Verfügung.',
+        text: 'Sprechen Sie uns gerne direkt an — wir beraten Sie persönlich zu allen verfügbaren Modellen, Größen und Integrationsmöglichkeiten. Unser Team in Willich-Neersen steht Ihnen MO–FR von 08:30–17:00 Uhr zur Verfügung.',
       },
     ],
     benefits: [

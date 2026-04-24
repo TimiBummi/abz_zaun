@@ -13,6 +13,7 @@ import {
   MessageCircle,
   MapPin,
   Clock,
+  Store,
 } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -160,6 +161,24 @@ export default function KontaktPage() {
                       </p>
                       <p className="font-heading font-semibold text-charcoal">
                         MO – FR: 08:30 – 17:00
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Showroom */}
+                  <div className="flex items-start gap-3">
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-abz-red/10 text-abz-red">
+                      <Store className="h-5 w-5" />
+                    </div>
+                    <div>
+                      <p className="text-sm font-medium text-warm-brown">
+                        Musterausstellung
+                      </p>
+                      <p className="font-heading font-semibold text-charcoal">
+                        Produkte vor Ort erleben
+                      </p>
+                      <p className="mt-0.5 text-sm text-body-text">
+                        Besuchen Sie unsere Ausstellung und sehen Sie Zäune, Tore und Sichtschutz live — zu unseren Öffnungszeiten, ohne Termin.
                       </p>
                     </div>
                   </div>

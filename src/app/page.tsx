@@ -64,7 +64,7 @@ const productCategories = [
     name: 'Maschendrahtzaun',
     slug: 'maschendrahtzaun',
     description: 'Die wirtschaftliche Lösung für Grundstückseinfriedungen.',
-    image: null,
+    image: '/images/produkte/maschendrahtzaun/maschendrahtzaun-anlage.jpg',
   },
   {
     name: 'Zierzaun',

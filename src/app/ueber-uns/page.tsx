@@ -104,6 +104,9 @@ export default function UeberUnsPage() {
                 bewährte Montagetechniken — für Ergebnisse, die langfristig
                 überzeugen.
               </p>
+              <p className="mt-4 text-base leading-relaxed text-body-text">
+                In unserer <strong className="text-charcoal">Musterausstellung in Willich-Neersen</strong> können Sie Zäune, Tore und Sichtschutzlösungen live begutachten — damit Sie genau wissen, was Sie erwartet. Kommen Sie einfach während unserer Öffnungszeiten vorbei, ganz ohne Termin.
+              </p>
             </div>
             </AnimateIn>
 
